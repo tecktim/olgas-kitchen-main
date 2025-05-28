@@ -1,0 +1,224 @@
+/* Olga’s Kitchen Styles */
+:root {
+  --font-base: 'Nunito', sans-serif;
+  --color-bg-light: #FFF8F0;
+  --color-bg-dark: #FAF6F2;
+  --color-text: #37352F;
+  --color-accent: #FFC857;
+  --color-btn-bg: #7C4D29;
+  --color-btn-text: #FFFFFF;
+  --spacing: 1rem;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.12);
+  --touch-size: 2.5rem;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: 100%; line-height: 1.5; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font-base);
+  background: var(--color-bg-light);
+  color: var(--color-text);
+}
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
+.skip-link {
+  position: absolute; top: -40px; left: 0;
+  background: var(--color-accent);
+  color: var(--color-btn-text);
+  padding: .5rem; z-index: 100;
+  transition: top .3s;
+}
+.skip-link:focus { top: 0; }
+h1, h2, h3, h4 { margin: var(--spacing) 0 .5rem; font-weight: 700; }
+h1 { font-size: clamp(1.75rem,5vw,3rem); margin-bottom: var(--spacing); }
+h2 { font-size: clamp(1.5rem,4vw,2rem); color: var(--color-accent); }
+h3 { font-size: clamp(1.125rem,3vw,1.25rem); }
+h4 { font-size: clamp(1rem,2.5vw,1rem); color: var(--color-accent); }
+p { margin: 0 0 var(--spacing); }
+
+header {
+  background: var(--color-bg-light);
+  padding: calc(var(--spacing)*2) var(--spacing);
+  text-align: center;
+  box-shadow: var(--shadow);
+  position: sticky; top: 0; z-index: 10;
+}
+/* Hamburger-Button */
+.menu-toggle {
+  display: none;
+  position: absolute; top: var(--spacing); right: var(--spacing);
+  width: var(--touch-size); height: var(--touch-size);
+  background: none; border: none; cursor: pointer;
+  flex-direction: column; justify-content: space-around;
+  align-items: center; z-index: 11;
+}
+.menu-toggle span {
+  display: block; width: 24px; height: 3px;
+  background: var(--color-text); border-radius: 2px;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+nav {
+  position: relative;
+}
+nav ul {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: var(--spacing);
+  margin-top: var(--spacing);
+}
+nav li a {
+  padding: .5rem 1rem; border-radius: var(--radius);
+  font-weight: 600; letter-spacing: .5px;
+  transition: background .3s, transform .2s;
+}
+nav li a:hover, nav li a:focus {
+  background: var(--color-accent); color: var(--color-btn-text);
+  transform: translateY(-2px);
+  outline: 3px solid var(--color-text);
+}
+
+button, .btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: var(--touch-size); padding: 0 1.5rem; border: none;
+  border-radius: var(--radius); background: var(--color-btn-bg);
+  color: var(--color-btn-text); box-shadow: var(--shadow);
+  text-transform: uppercase; font-size: .9rem; letter-spacing:.5px;
+  cursor: pointer; transition: background .3s, transform .2s, box-shadow .3s;
+  margin-top: var(--spacing);
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+  background: #652E1F; transform: translateY(-2px);
+  box-shadow: var(--shadow-hover); outline: 3px solid var(--color-accent);
+}
+
+.btn-order { margin-top: calc(var(--spacing)*2); }
+
+/* WhatsApp-Button */
+.btn-whatsapp {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: #25D366; color: #FFF; padding: .75rem 1.5rem;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  font-weight: 600; text-decoration: none;
+  transition: background .3s, transform .2s;
+}
+.btn-whatsapp:hover, .btn-whatsapp:focus {
+  background: #1DA851; transform: translateY(-2px); outline: none;
+}
+
+section {
+  max-width:900px; margin:0 auto;
+  padding: calc(var(--spacing)*3) var(--spacing);
+  text-align:center;
+}
+section:nth-child(even) { background: var(--color-bg-dark); }
+section + section { border-top:4px solid var(--color-accent); }
+
+.products {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: var(--spacing);
+  margin-top: calc(var(--spacing)*1.5);
+  align-items:start;
+}
+.product {
+  background:#fff; padding:var(--spacing);
+  border-radius:var(--radius); box-shadow:var(--shadow);
+  display:flex; flex-direction:column;
+  transition:transform .3s, box-shadow .3s;
+}
+.product:hover, .product:focus-within {
+  transform: translateY(-4px); box-shadow:var(--shadow-hover);
+}
+.product .allergens {
+  font-size:.875rem; color:#7D9775;
+  margin-bottom:var(--spacing);
+}
+
+.product-details {
+  display:grid; row-gap:var(--spacing);
+  margin-top:var(--spacing);
+  border-top:1px solid var(--color-bg-dark);
+  padding:0 var(--spacing);
+  max-height:0; overflow:hidden;
+  transition:max-height .3s ease, padding .3s ease;
+}
+.product-details:not([hidden]) {
+  max-height:250px; overflow-y:auto; padding:var(--spacing);
+}
+.product-details h4 { margin-top:0; }
+
+.product-details:not([hidden])::-webkit-scrollbar { width:8px; }
+.product-details:not([hidden])::-webkit-scrollbar-track {
+  background: var(--color-bg-dark); border-radius:4px;
+}
+.product-details:not([hidden])::-webkit-scrollbar-thumb {
+  background: var(--color-accent); border-radius:4px;
+  border:2px solid var(--color-bg-dark);
+}
+.product-details:not([hidden]) {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) var(--color-bg-dark);
+}
+
+.process {
+  display:flex; flex-wrap:wrap; justify-content:center;
+  gap:var(--spacing); margin-top:calc(var(--spacing)*1.5);
+}
+.step {
+  flex:1 1 180px; background:#fff;
+  padding:var(--spacing); border-radius:var(--radius);
+  box-shadow:var(--shadow); text-align:center;
+  transition:transform .3s, box-shadow .3s;
+}
+.step:hover, .step:focus-within {
+  transform: translateY(-4px); box-shadow:var(--shadow-hover);
+  background:var(--color-bg-light);
+}
+
+footer {
+  background:var(--color-text); color:#B7B7A4;
+  text-align:center; padding:calc(var(--spacing)*2) var(--spacing);
+  font-size:.85rem;
+}
+footer a:hover, footer a:focus {
+  color:#fff; outline:3px solid var(--color-accent);
+}
+
+ @media (max-width:600px) {
+  /* Header-Padding reduzieren */
+  header {
+    padding: var(--spacing) var(--spacing);
+  }
+  /* Hamburger anzeigen */
+  .menu-toggle {
+    display: flex;
+  }
+  /* Nav verstecken und ausklappbar machen */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--color-bg-light);
+    position: absolute; top: 100%; left: 0;
+    width: 100%; box-shadow: var(--shadow);
+    padding: var(--spacing) 0;
+  }
+  nav.open ul {
+    display: flex;
+  }
+  /* Navbar-Abstand verringern */
+  nav ul li {
+    margin: var(--spacing) 0;
+  }
+  /* Links-Padding anpassen */
+  nav li a {
+    padding: .5rem 1rem;
+  }
+  /* Buttons full-width */
+  .btn, .btn-whatsapp {
+    width: 100%;
+  }
+  section { padding: var(--spacing) .5rem; }
+}
