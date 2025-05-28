@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Olga’s Kitchen – Handgemachte Fertiggerichte online bestellen: Rumänische Piroggen, Frischkäse-Taler, Mini-Banana-Pancakes. Jetzt vorbestellen & genießen!">
+  <meta name="keywords" content="Olga’s Kitchen, Fertiggerichte bestellen, Rumänische Piroggen, Frischkäse Taler, Banana Pancakes, Online bestellen">
+  <title>🍽️ Olga’s Kitchen – Handgemachte Gerichte online bestellen</title>
+  <style>
+    :root {
+      --font-base: 'Nunito', sans-serif;
+      --color-bg-light: #FFF8F0;
+      --color-bg-dark: #FAF6F2;
+      --color-text: #37352F;
+      --color-accent: #FFC857;
+      --color-btn-bg: #7C4D29;
+      --color-btn-text: #FFFFFF;
+      --spacing: 1rem;
+      --radius: 8px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+      --shadow-hover: 0 4px 16px rgba(0,0,0,0.12);
+      --touch-size: 2.5rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { font-size: 100%; line-height: 1.5; }
+    body {
+      margin: 0; padding: 0;
+      font-family: var(--font-base);
+      background: var(--color-bg-light);
+      color: var(--color-text);
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    img { max-width: 100%; height: auto; display: block; }
+    .skip-link {
+      position: absolute; top: -40px; left: 0;
+      background: var(--color-accent);
+      color: var(--color-btn-text);
+      padding: .5rem; z-index: 100;
+      transition: top .3s;
+    }
+    .skip-link:focus { top: 0; }
+    h1, h2, h3, h4 { margin: var(--spacing) 0 .5rem; font-weight: 700; }
+    h1 { font-size: clamp(1.75rem,5vw,3rem); margin-bottom: var(--spacing); }
+    h2 { font-size: clamp(1.5rem,4vw,2rem); color: var(--color-accent); }
+    h3 { font-size: clamp(1.125rem,3vw,1.25rem); }
+    h4 { font-size: clamp(1rem,2.5vw,1rem); color: var(--color-accent); }
+    p { margin: 0 0 var(--spacing); }
+
+    header {
+      background: var(--color-bg-light);
+      padding: calc(var(--spacing)*2) var(--spacing);
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: sticky; top: 0; z-index: 10;
+    }
+    /* Hamburger-Button */
+    .menu-toggle {
+      display: none;
+      position: absolute; top: var(--spacing); right: var(--spacing);
+      width: var(--touch-size); height: var(--touch-size);
+      background: none; border: none; cursor: pointer;
+      flex-direction: column; justify-content: space-around;
+      align-items: center; z-index: 11;
+    }
+    .menu-toggle span {
+      display: block; width: 24px; height: 3px;
+      background: var(--color-text); border-radius: 2px;
+      transition: transform .3s ease, opacity .3s ease;
+    }
+
+    nav {
+      position: relative;
+    }
+    nav ul {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: var(--spacing);
+      margin-top: var(--spacing);
+    }
+    nav li a {
+      padding: .5rem 1rem; border-radius: var(--radius);
+      font-weight: 600; letter-spacing: .5px;
+      transition: background .3s, transform .2s;
+    }
+    nav li a:hover, nav li a:focus {
+      background: var(--color-accent); color: var(--color-btn-text);
+      transform: translateY(-2px);
+      outline: 3px solid var(--color-text);
+    }
+
+    button, .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: var(--touch-size); padding: 0 1.5rem; border: none;
+      border-radius: var(--radius); background: var(--color-btn-bg);
+      color: var(--color-btn-text); box-shadow: var(--shadow);
+      text-transform: uppercase; font-size: .9rem; letter-spacing:.5px;
+      cursor: pointer; transition: background .3s, transform .2s, box-shadow .3s;
+      margin-top: var(--spacing);
+    }
+    button:hover, button:focus, .btn:hover, .btn:focus {
+      background: #652E1F; transform: translateY(-2px);
+      box-shadow: var(--shadow-hover); outline: 3px solid var(--color-accent);
+    }
+
+    .btn-order { margin-top: calc(var(--spacing)*2); }
+
+    /* WhatsApp-Button */
+    .btn-whatsapp {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: #25D366; color: #FFF; padding: .75rem 1.5rem;
+      border-radius: var(--radius); box-shadow: var(--shadow);
+      font-weight: 600; text-decoration: none;
+      transition: background .3s, transform .2s;
+    }
+    .btn-whatsapp:hover, .btn-whatsapp:focus {
+      background: #1DA851; transform: translateY(-2px); outline: none;
+    }
+
+    section {
+      max-width:900px; margin:0 auto;
+      padding: calc(var(--spacing)*3) var(--spacing);
+      text-align:center;
+    }
+    section:nth-child(even) { background: var(--color-bg-dark); }
+    section + section { border-top:4px solid var(--color-accent); }
+
+    .products {
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: var(--spacing);
+      margin-top: calc(var(--spacing)*1.5);
+      align-items:start;
+    }
+    .product {
+      background:#fff; padding:var(--spacing);
+      border-radius:var(--radius); box-shadow:var(--shadow);
+      display:flex; flex-direction:column;
+      transition:transform .3s, box-shadow .3s;
+    }
+    .product:hover, .product:focus-within {
+      transform: translateY(-4px); box-shadow:var(--shadow-hover);
+    }
+    .product .allergens {
+      font-size:.875rem; color:#7D9775;
+      margin-bottom:var(--spacing);
+    }
+
+    .product-details {
+      display:grid; row-gap:var(--spacing);
+      margin-top:var(--spacing);
+      border-top:1px solid var(--color-bg-dark);
+      padding:0 var(--spacing);
+      max-height:0; overflow:hidden;
+      transition:max-height .3s ease, padding .3s ease;
+    }
+    .product-details:not([hidden]) {
+      max-height:250px; overflow-y:auto; padding:var(--spacing);
+    }
+    .product-details h4 { margin-top:0; }
+
+    .product-details:not([hidden])::-webkit-scrollbar { width:8px; }
+    .product-details:not([hidden])::-webkit-scrollbar-track {
+      background: var(--color-bg-dark); border-radius:4px;
+    }
+    .product-details:not([hidden])::-webkit-scrollbar-thumb {
+      background: var(--color-accent); border-radius:4px;
+      border:2px solid var(--color-bg-dark);
+    }
+    .product-details:not([hidden]) {
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-accent) var(--color-bg-dark);
+    }
+
+    .process {
+      display:flex; flex-wrap:wrap; justify-content:center;
+      gap:var(--spacing); margin-top:calc(var(--spacing)*1.5);
+    }
+    .step {
+      flex:1 1 180px; background:#fff;
+      padding:var(--spacing); border-radius:var(--radius);
+      box-shadow:var(--shadow); text-align:center;
+      transition:transform .3s, box-shadow .3s;
+    }
+    .step:hover, .step:focus-within {
+      transform: translateY(-4px); box-shadow:var(--shadow-hover);
+      background:var(--color-bg-light);
+    }
+
+    footer {
+      background:var(--color-text); color:#B7B7A4;
+      text-align:center; padding:calc(var(--spacing)*2) var(--spacing);
+      font-size:.85rem;
+    }
+    footer a:hover, footer a:focus {
+      color:#fff; outline:3px solid var(--color-accent);
+    }
+
+     @media (max-width:600px) {
+      /* Header-Padding reduzieren */
+      header {
+        padding: var(--spacing) var(--spacing);
+      }
+      /* Hamburger anzeigen */
+      .menu-toggle {
+        display: flex;
+      }
+      /* Nav verstecken und ausklappbar machen */
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: var(--color-bg-light);
+        position: absolute; top: 100%; left: 0;
+        width: 100%; box-shadow: var(--shadow);
+        padding: var(--spacing) 0;
+      }
+      nav.open ul {
+        display: flex;
+      }
+      /* Navbar-Abstand verringern */
+      nav ul li {
+        margin: var(--spacing) 0;
+      }
+      /* Links-Padding anpassen */
+      nav li a {
+        padding: .5rem 1rem;
+      }
+      /* Buttons full-width */
+      .btn, .btn-whatsapp {
+        width: 100%;
+      }
+      section { padding: var(--spacing) .5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#home" class="skip-link">Zum Inhalt springen</a>
+
+  <header>
+    <h1>🍽️ Olga’s Kitchen</h1>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#produkte">🥟 Produkte</a></li>
+        <li><a href="#bestellen">🛒 Bestellen</a></li>
+        <li><a href="#feedback">💬 Feedback</a></li>
+        <li><a href="#kontakt">📞 Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>🍲 Traditionelle Küche für deinen Alltag – einfach vorbestellen &amp; genießen</h2>
+    <p>Handgemachte Gerichte aus unserer Familienküche: 🥟 Piroggen, 🧀 Frischkäse-Taler &amp; 🥞 Mini-Banana-Pancakes.</p>
+    <a href="#produkte" class="btn">🔍 Jetzt entdecken</a>
+  </section>
+
+  <section id="produkte">
+    <h2>✨ Unsere Spezialitäten</h2>
+    <div class="products">
+      <!-- Piroggen -->
+      <div class="product">
+        <h3>🥟 Piroggen (Colțunași)</h3>
+        <p>Rumänische Teigtaschen mit Hüttenkäse – weich, herzhaft &amp; handgemacht.</p>
+        <p class="allergens"><strong>Enthält:</strong> Gluten, Milch, Ei</p>
+        <button class="btn expand" aria-expanded="false" aria-controls="details-piroggen">
+          👩‍🍳 Zubereitung &amp; Serviervorschläge
+        </button>
+        <div id="details-piroggen" class="product-details" hidden>
+          <h4>📦 Packungsinhalt</h4>
+          <p>2 Portionen (500 g gefrorenes Produkt) – ideal als Hauptgericht oder zum Teilen.</p>
+          <h4>🔪 Zubereitung</h4>
+          <p>1. Wasser zum Kochen bringen, salzen.<br>
+             2. Piroggen 5–7 Min. garen.<br>
+             3. Abgießen, mit Butter schwenken.</p>
+          <h4>🍴 Serviervorschläge</h4>
+          <p>Mit Schmand &amp; frischen Kräutern.</p>
+          <h4>⚖️ Nährwerte (100 g)</h4>
+          <p>225 kcal | 10,8 g Eiweiß | 24,5 g KH | 9,4 g Fett</p>
+        </div>
+      </div>
+      <!-- Frischkäse-Taler -->
+      <div class="product">
+        <h3>🧀 Frischkäse-Taler (Brânzoaice)</h3>
+        <p>Luftig gebackene Taler aus Frischkäse-Teig – ideal zum Frühstück oder Snack.</p>
+        <p class="allergens"><strong>Enthält:</strong> Milch, Gluten, Ei</p>
+        <button class="btn expand" aria-expanded="false" aria-controls="details-frischkaese">
+          👩‍🍳 Zubereitung &amp; Serviervorschläge
+        </button>
+        <div id="details-frischkaese" class="product-details" hidden>
+          <h4>📦 Packungsinhalt</h4>
+          <p>12 Taler (ca. 360 g gefrorenes Produkt) – perfekt für Frühstück oder Snack.</p>
+          <h4>🔪 Zubereitung</h4>
+          <p>1. Im vorgeheizten Ofen bei 180 °C Umluft 25–30 Min. backen (zwischen­durch wenden).</p>
+          <h4>🍴 Serviervorschläge</h4>
+          <p>Mit Joghurt, Schmand &amp; Beeren genießen.</p>
+          <h4>⚖️ Nährwerte (100 g)</h4>
+          <p>156 kcal | 14 g Eiweiß | 22 g KH | 4 g Fett</p>
+        </div>
+      </div>
+      <!-- Mini-Banana-Pancakes -->
+      <div class="product">
+        <h3>🥞 Mini-Banana-Pancakes</h3>
+        <p>Fluffige Pancakes mit Banane, extra Eiweiß &amp; Schokotropfen – proteinreich &amp; lecker.</p>
+        <p class="allergens"><strong>Enthält:</strong> Gluten, Milch, Ei, Soja*</p>
+        <button class="btn expand" aria-expanded="false" aria-controls="details-pancakes">
+          👩‍🍳 Zubereitung &amp; Serviervorschläge
+        </button>
+        <div id="details-pancakes" class="product-details" hidden>
+          <h4>📦 Packungsinhalt</h4>
+          <p>12 Stück (ca. 240 g gefrorenes Produkt) – handlich &amp; snackfertig.</p>
+          <h4>🔪 Zubereitung</h4>
+          <p>Gefrorene Pancakes (2–4 Stück) im Toaster auf höchster Stufe toasten, bis sie goldbraun sind.</p>
+          <h4>🍴 Serviervorschläge</h4>
+          <p>Mit Beeren, Honig, Joghurt oder pur als Snack 😊.</p>
+          <h4>⚖️ Nährwerte (100 g)</h4>
+          <p>225 kcal | 7,3 g Eiweiß | 32,3 g KH | 7,2 g Fett</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bestellen">
+    <h2>🛒 So läuft deine Bestellung ab</h2>
+    <div class="process">
+      <div class="step"><h3>1️⃣ Auswählen</h3><p>Gericht &amp; Menge wählen.</p></div>
+      <div class="step"><h3>2️⃣ Bestätigung</h3><p>Bestätigung per E-Mail.</p></div>
+      <div class="step"><h3>3️⃣ Abholen</h3><p>Abholung oder Lieferung.</p></div>
+    </div>
+    <a href="https://order.olgas-kitchen.de"
+       target="_blank" rel="noopener noreferrer"
+       class="btn btn-order">
+      🚀 Bestellung starten
+    </a>
+  </section>
+
+  <section id="feedback">
+    <h2>💬 Dein Feedback zählt!</h2>
+    <p>Wie können wir noch besser werden? Unkompliziert feedback geben.</p>
+    <a href="https://feedback.olgas-kitchen.de"
+       target="_blank" rel="noopener noreferrer"
+       class="btn">
+      ✍️ Feedback geben
+    </a>
+  </section>
+
+  <section id="kontakt">
+    <h2>📞 Kontakt</h2>
+    <p>Olga’s Kitchen<br>Heßlingerstraße 2, 88518 Herbertingen</p>
+    <a href="https://wa.me/4917668291438"
+       class="btn-whatsapp"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="WhatsApp-Chat mit Olga’s Kitchen starten">
+      📱 WhatsApp Chat starten
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 Olga’s Kitchen – Alle Rechte vorbehalten.<br>
+    <a href="#home">⬆️ Nach oben</a>
+  </footer>
+
+  <script>
+    // Burger-Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+
+    // Produkt-Details Toggle
+    document.querySelectorAll('.expand').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('aria-controls'),
+              details = document.getElementById(id),
+              open = details.hasAttribute('hidden');
+        document.querySelectorAll('.product-details').forEach(d => {
+          if (!d.hasAttribute('hidden')) {
+            d.setAttribute('hidden','');
+            document.querySelector(`[aria-controls="${d.id}"]`)
+                    .setAttribute('aria-expanded','false');
+          }
+        });
+        if (open) {
+          details.removeAttribute('hidden');
+          btn.setAttribute('aria-expanded','true');
+        } else {
+          details.setAttribute('hidden','');
+          btn.setAttribute('aria-expanded','false');
+        }
+      });
+    });
+
+    // Footer ausblenden bei Klick auf Header-Links
+    const footer = document.querySelector('footer');
+    document.querySelectorAll('header nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        footer.setAttribute('hidden', '');
+      });
+    });
+  </script>
+
+</body>
+</html>
