@@ -5,7 +5,7 @@ fetch('data.json')
   .then(data => {
     // Set site title
     document.title = data.siteTitle;
-    document.querySelector('h1').textContent = data.siteTitle;
+    document.querySelector('h1').innerHTML = `<img src="logo.svg" alt="Logo" class="logo"> ${data.siteTitle}`;
 
     // Build navigation
     const navUl = document.querySelector('nav ul');

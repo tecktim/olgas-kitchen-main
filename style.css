@@ -3,17 +3,17 @@
 /* Variables */
 :root {
   --font-base: 'Nunito', sans-serif;
-  --color-bg-light: #FFF8F0;
-  --color-bg-dark: #FAF6F2;
+  --color-bg-light: #F8F5F8;
+  --color-bg-dark: #F2EBF1;
   --color-text: #37352F;
-  --color-accent: #FFC857;
-  --color-btn-bg: #7C4D29;
+  --color-accent: #843B78;
+  --color-btn-bg: #5C2954;
   --color-btn-text: #FFFFFF;
   --spacing: 1rem;
   --spacingHalfed: calc(var(--spacing) / 2);
   --radius: 8px;
-  --shadow: 0 2px 8px rgba(0,0,0,0.08);
-  --shadow-hover: 0 4px 16px rgba(0,0,0,0.12);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
   --touch-size: 2.5rem;
 }
 
@@ -44,6 +44,14 @@ h3 { font-size: clamp(1.125rem,3vw,1.25rem); }
 h4 { font-size: clamp(1rem,2.5vw,1rem); color: var(--color-accent); }
 p { margin: 0 0 var(--spacing); }
 
+/* Disable text selection on all devices */
+*, *::before, *::after {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* Header */
 header {
   background: var(--color-bg-light);
@@ -51,6 +59,35 @@ header {
   text-align: center;
   box-shadow: var(--shadow);
   position: sticky; top: 0; z-index: 10;
+}
+
+/* Logo im Header: links neben dem Titel mit Lade-Animation */
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 .logo {
+  width: auto;
+  height: 1.5em;
+  margin-right: var(--spacingHalfed);
+  opacity: 0;
+  animation: logoSlideIn 1s ease-out forwards;
+  will-change: transform, opacity; /* Hint to browser for smoother animations */
+}
+@keyframes logoSlideIn {
+  0% {
+    transform: translateX(-50%) scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(20%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
 }
 
 /* Navigation */
@@ -257,6 +294,13 @@ footer a:hover, footer a:focus {
     width: 100%;
   }
   section { padding: var(--spacing) .5rem; }
+  /* Disable text selection on mobile */
+  *, *::before, *::after {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
 
 /* Hover Overrides */

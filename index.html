@@ -6,6 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Olga’s Kitchen – Handgemachte Fertiggerichte online bestellen: Rumänische Piroggen, Frischkäse-Taler, Mini-Banana-Pancakes. Jetzt vorbestellen & genießen!">
   <meta name="keywords" content="Olga’s Kitchen, Fertiggerichte bestellen, Rumänische Piroggen, Frischkäse Taler, Banana Pancakes, Online bestellen">
+  <link rel="preload" href="logo.svg" as="image">
+  <style>
+    header h1 { display: flex; align-items: center; justify-content: center; }
+    header h1 .logo { width: 50px; height: auto; margin-right: var(--spacingHalfed); opacity: 0;
+      animation: logoSlideIn 1s ease-out forwards; will-change: transform, opacity; }
+    @keyframes logoSlideIn {
+      0% { transform: translateX(-50%) scale(0.5); opacity: 0; }
+      60% { transform: translateX(20%) scale(1.2); opacity: 1; }
+      100% { transform: translateX(0) scale(1); opacity: 1; }
+    }
+  </style>
   <title>Olga’s Kitchen</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +25,7 @@
   <a href="#home" class="skip-link">Zum Inhalt springen</a>
 
   <header>
-    <h1>Olga’s Kitchen</h1>
+    <h1><img src="logo.svg" alt="Logo" class="logo"> Olga’s Kitchen</h1>
     <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -140,6 +151,6 @@
     <a href="#home">Nach oben</a>
   </footer>
 
-  <script src="main.js"></script>
-</body>
+  <script src="main.js" defer></script>
+ </body>
 </html>
