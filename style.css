@@ -216,16 +216,33 @@ footer a:hover, footer a:focus {
   }
   /* Nav verstecken und ausklappbar machen */
   nav ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     background: var(--color-bg-light);
-    position: absolute; top: 100%; left: 0;
-    width: 100%; box-shadow: var(--shadow);
-    padding: var(--spacing) 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: var(--shadow);
+    padding: 0 var(--spacing);
     gap: var(--spacingHalfed);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
   }
   nav.open ul {
-    display: flex;
+    max-height: 500px;
+    opacity: 1;
+  }
+  /* Text erst am Ende der Animation einblenden */
+  nav ul li a {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  nav.open ul li a {
+    opacity: 1;
+    transition-delay: 0.2s;
   }
   /* Navbar-Abstand verringern */
   nav ul li {
