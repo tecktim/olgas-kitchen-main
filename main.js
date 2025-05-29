@@ -37,7 +37,6 @@ fetch('data.json')
       prodDiv.innerHTML = `
         <h3>${p.name}</h3>
         <p>${p.description}</p>
-        <p class="allergens"><strong>Enthält:</strong> ${p.allergens.join(', ')}</p>
         <button class="btn expand" aria-expanded="false" aria-controls="details-${p.id}">
           Zubereitung & Serviervorschläge
         </button>
@@ -50,6 +49,8 @@ fetch('data.json')
           <p>${p.details.serviervorschlaege}</p>
           <h4>Nährwerte (100 g)</h4>
           <p>${p.details.naehrwerte}</p>
+          <h4>Allergene</h4>
+          <p><strong>Enthält:</strong> ${p.allergens.join(', ')}</p>
         </div>
       `;
       productsDiv.appendChild(prodDiv);

@@ -15,6 +15,20 @@
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
   --touch-size: 2.5rem;
+  --duration: .3s;
+  --duration-short: .2s;
+  --duration-medium: .4s;
+  --duration-flash: .8s;
+  --delay-flash: .5s;
+  --btn-hover-bg: #652E1F;
+  --whatsapp-bg: #25D366;
+  --whatsapp-bg-hover: #1DA851;
+  --flash-bg: rgba(132,59,120,0.2);
+  --scrollbar-track-bg: var(--color-bg-dark);
+  --scrollbar-thumb-bg: var(--color-accent);
+  --scrollbar-thumb-border: 2px solid var(--color-bg-dark);
+  --product-shadow-inset: inset 0 4px 6px -4px rgba(0,0,0,0.1);
+  --product-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Base Element Styles */
@@ -102,7 +116,7 @@ nav ul {
 nav li a {
   padding: .5rem 1rem; border-radius: var(--radius);
   font-weight: 600; letter-spacing: .5px;
-  transition: background .3s, transform .2s;
+  transition: background var(--duration), transform var(--duration-short);
 }
 nav li a:hover, nav li a:focus {
   background: var(--color-accent); color: var(--color-btn-text);
@@ -123,7 +137,7 @@ nav li a:hover, nav li a:focus {
 .menu-toggle span {
   display: block; width: 24px; height: 3px;
   background: var(--color-text); border-radius: 2px;
-  transition: transform .3s ease, opacity .3s ease;
+  transition: transform var(--duration) ease, opacity var(--duration) ease;
 }
 
 /* Buttons */
@@ -133,11 +147,11 @@ button, .btn {
   border-radius: var(--radius); background: var(--color-btn-bg);
   color: var(--color-btn-text); box-shadow: var(--shadow);
   text-transform: uppercase; font-size: .9rem; letter-spacing:.5px;
-  cursor: pointer; transition: background .3s, transform .2s, box-shadow .3s;
+  cursor: pointer; transition: background var(--duration), transform var(--duration-short), box-shadow var(--duration);
   margin-top: var(--spacing);
 }
 button:hover, button:focus, .btn:hover, .btn:focus {
-  background: #652E1F; transform: translateY(-2px);
+  background: var(--btn-hover-bg); transform: translateY(-2px);
   box-shadow: var(--shadow-hover); outline: 3px solid var(--color-accent);
 }
 
@@ -147,13 +161,13 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-whatsapp {
   display: inline-flex; align-items: center; justify-content: center;
   gap: .5rem;
-  background: #25D366; color: #FFF; padding: .75rem 1.5rem;
+  background: var(--whatsapp-bg); color: #FFF; padding: .75rem 1.5rem;
   border-radius: var(--radius); box-shadow: var(--shadow);
   font-weight: 600; text-decoration: none;
   transition: background .3s, transform .2s;
 }
 .btn-whatsapp:hover, .btn-whatsapp:focus {
-  background: #1DA851; transform: translateY(-2px); outline: none;
+  background: var(--whatsapp-bg-hover); transform: translateY(-2px); outline: none;
 }
 
 /* Sections */
@@ -177,7 +191,8 @@ section + section { border-top:4px solid var(--color-accent); }
   background:#fff; padding:var(--spacing);
   border-radius:var(--radius); box-shadow:var(--shadow);
   display:flex; flex-direction:column;
-  transition:transform .3s, box-shadow .3s;
+  transition: transform var(--duration), box-shadow var(--duration);
+  box-shadow: var(--shadow);
 }
 .product:hover, .product:focus-within {
   transform: translateY(-4px); box-shadow:var(--shadow-hover);
@@ -202,13 +217,13 @@ section + section { border-top:4px solid var(--color-accent); }
 }
 .product-details h4 { margin-top:0; }
 
-.product-details:not([hidden])
+/* Scrollbar styling */
 .product-details:not([hidden])::-webkit-scrollbar-track {
-  background: var(--color-bg-dark); border-radius:4px;
+  background: var(--scrollbar-track-bg);
 }
 .product-details:not([hidden])::-webkit-scrollbar-thumb {
-  background: var(--color-accent); border-radius:4px;
-  border:2px solid var(--color-bg-dark);
+  background: var(--scrollbar-thumb-bg);
+  border: var(--scrollbar-thumb-border);
 }
 .product-details:not([hidden]) {
   scrollbar-width: thin;
@@ -224,7 +239,7 @@ section + section { border-top:4px solid var(--color-accent); }
   flex:1 1 180px; background:#fff;
   padding:var(--spacing); border-radius:var(--radius);
   box-shadow:var(--shadow); text-align:center;
-  transition:transform .3s, box-shadow .3s;
+  transition: transform var(--duration), box-shadow var(--duration);
 }
 .step:hover, .step:focus-within {
   transform: translateY(-4px); box-shadow:var(--shadow-hover);
@@ -243,11 +258,11 @@ footer a:hover, footer a:focus {
 
 /* Flash effect when navigating to a section via navbar */
 section.flash {
-  animation: flashSection .8s ease-in-out;
+  animation: flashSection var(--duration-flash) ease-in-out;
+  animation-delay: var(--delay-flash);
 }
-
 @keyframes flashSection {
-  0% { background-color: rgba(132, 59, 120, 0.2); }
+  0% { background-color: var(--flash-bg); }
   100% { background-color: transparent; }
 }
 
