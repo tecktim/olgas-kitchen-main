@@ -1,0 +1,86 @@
+{
+  "siteTitle": "Olga’s Kitchen",
+  "navLinks": [
+    { "href": "#home", "text": "Home" },
+    { "href": "#produkte", "text": "Produkte" },
+    { "href": "#bestellen", "text": "Bestellen" },
+    { "href": "#feedback", "text": "Feedback" },
+    { "href": "#kontakt", "text": "Kontakt" }
+  ],
+  "sections": {
+    "home": {
+      "heading": "Traditionelle Küche für deinen Alltag – einfach vorbestellen & genießen",
+      "text": "Handgemachte Gerichte aus unserer Familienküche: Piroggen, Frischkäse-Taler & Mini-Banana-Pancakes.",
+      "button": { "href": "#produkte", "text": "Jetzt entdecken" }
+    },
+    "products": [
+      {
+        "id": "piroggen",
+        "name": "Piroggen (Colțunași)",
+        "description": "Rumänische Teigtaschen mit Hüttenkäse – weich, herzhaft & handgemacht.",
+        "allergens": ["Gluten", "Milch", "Ei"],
+        "details": {
+          "packung": "2 Portionen (500 g gefrorenes Produkt) – ideal als Hauptgericht oder zum Teilen.",
+          "zubereitung": [
+            "Wasser zum Kochen bringen, salzen.",
+            "Piroggen 5–7 Min. garen.",
+            "Abgießen, mit Butter schwenken."
+          ],
+          "serviervorschlaege": "Mit Schmand & frischen Kräutern.",
+          "naehrwerte": "225 kcal | 10,8 g Eiweiß | 24,5 g KH | 9,4 g Fett"
+        }
+      },
+      {
+        "id": "frischkaese",
+        "name": "Frischkäse-Taler (Brânzoaice)",
+        "description": "Luftig gebackene Taler aus Frischkäse-Teig – ideal zum Frühstück oder Snack.",
+        "allergens": ["Milch", "Gluten", "Ei"],
+        "details": {
+          "packung": "12 Taler (ca. 360 g gefrorenes Produkt) – perfekt für Frühstück oder Snack.",
+          "zubereitung": [
+            "Im vorgeheizten Ofen bei 180 °C Umluft 25–30 Min. backen (zwischen­durch wenden)."
+          ],
+          "serviervorschlaege": "Mit Joghurt, Schmand & Beeren genießen.",
+          "naehrwerte": "156 kcal | 14 g Eiweiß | 22 g KH | 4 g Fett"
+        }
+      },
+      {
+        "id": "pancakes",
+        "name": "Mini-Banana-Pancakes",
+        "description": "Fluffige Pancakes mit Banane, extra Eiweiß & Schokotropfen – proteinreich & lecker.",
+        "allergens": ["Gluten", "Milch", "Ei", "Soja*"],
+        "details": {
+          "packung": "12 Stück (ca. 240 g gefrorenes Produkt) – handlich & snackfertig.",
+          "zubereitung": [
+            "Gefrorene Pancakes (2–4 Stück) im Toaster auf höchster Stufe toasten, bis sie goldbraun sind."
+          ],
+          "serviervorschlaege": "Mit Beeren, Honig, Joghurt oder pur als Snack 😊.",
+          "naehrwerte": "225 kcal | 7,3 g Eiweiß | 32,3 g KH | 7,2 g Fett"
+        }
+      }
+    ],
+    "order": {
+      "heading": "So läuft deine Bestellung ab",
+      "steps": [
+        { "icon": "1️⃣", "title": "Auswählen", "text": "Gericht & Menge wählen." },
+        { "icon": "2️⃣", "title": "Bestätigung", "text": "Bestätigung per E-Mail." },
+        { "icon": "3️⃣", "title": "Abholen", "text": "Abholung oder Lieferung." }
+      ],
+      "button": { "href": "https://order.olgas-kitchen.de", "text": "Bestellung starten", "external": true }
+    },
+    "feedback": {
+      "heading": "Dein Feedback zählt!",
+      "text": "Wie können wir noch besser werden? Unkompliziert feedback geben.",
+      "button": { "href": "https://feedback.olgas-kitchen.de", "text": "Feedback geben", "external": true }
+    },
+    "contact": {
+      "heading": "Kontakt",
+      "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+      "button": { "href": "https://wa.me/4917668291438", "text": "WhatsApp Chat starten", "ariaLabel": "WhatsApp-Chat mit Olga’s Kitchen starten", "external": true }
+    },
+    "footer": {
+      "text": "© 2025 Olga’s Kitchen – Alle Rechte vorbehalten.",
+      "backToTop": { "href": "#home", "text": "Nach oben" }
+    }
+  }
+}
