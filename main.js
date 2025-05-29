@@ -136,7 +136,6 @@ function setupInteractions() {
   });
 
   // Footer hide on nav link click
-  const footer = document.querySelector('footer');
   document.querySelectorAll('header nav a').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -147,10 +146,22 @@ function setupInteractions() {
         const targetPosition = targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight;
         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
         history.pushState(null, '', targetId);
+
+        // trigger flash after scrolling + delay
+        setTimeout(() => {
+          targetEl.classList.add('flash');
+          // remove class after animation end
+          targetEl.addEventListener('animationend', () => {
+            targetEl.classList.remove('flash');
+          }, { once: true });
+        }, 500);
       }
       // Hide footer and close nav
+      const footer = document.querySelector('footer');
       footer.setAttribute('hidden', '');
+      const nav = document.querySelector('nav');
       nav.classList.remove('open');
+      const menuToggle = document.querySelector('.menu-toggle');
       menuToggle.setAttribute('aria-expanded', 'false');
     });
   });

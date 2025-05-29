@@ -241,6 +241,16 @@ footer a:hover, footer a:focus {
   color:#fff; outline:3px solid var(--color-accent);
 }
 
+/* Flash effect when navigating to a section via navbar */
+section.flash {
+  animation: flashSection .8s ease-in-out;
+}
+
+@keyframes flashSection {
+  0% { background-color: rgba(132, 59, 120, 0.2); }
+  100% { background-color: transparent; }
+}
+
 /* Responsive Styles */
 @media (max-width:600px) {
   /* Header-Padding reduzieren */
