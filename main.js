@@ -36,5 +36,8 @@ const footer = document.querySelector('footer');
 document.querySelectorAll('header nav a').forEach(link => {
   link.addEventListener('click', () => {
     footer.setAttribute('hidden', '');
+    // Close burger menu when a navigation link is clicked
+    nav.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
   });
 });
