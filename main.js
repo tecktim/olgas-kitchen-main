@@ -35,11 +35,18 @@ fetch('data.json')
       const prodDiv = document.createElement('div');
       prodDiv.className = 'product';
       prodDiv.innerHTML = `
-        <h3>${p.name}</h3>
+        <div class="product-header">
+          <button class="btn expand" aria-expanded="false" aria-controls="details-${p.id}" aria-label="Mehr Infos zu ${p.name}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <title>Mehr Infos zu ${p.name}</title>
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+              <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="8" r="1" fill="currentColor"/>
+            </svg>
+          </button>
+          <h3>${p.name}</h3>
+        </div>
         <p>${p.description}</p>
-        <button class="btn expand" aria-expanded="false" aria-controls="details-${p.id}">
-          Zubereitung & Serviervorschläge
-        </button>
         <div id="details-${p.id}" class="product-details" hidden>
           <h4>Packungsinhalt</h4>
           <p>${p.details.packung}</p>
