@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: '.',
-  base: './',
+  base: '/olgas-kitchen-main/',
   build: {
     outDir: 'dist',
     rollupOptions: {
