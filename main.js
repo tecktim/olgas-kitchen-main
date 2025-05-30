@@ -39,10 +39,7 @@ fetch('data.json')
         <h3>${p.name}</h3>
         <button class="btn expand" aria-expanded="false" aria-controls="details-${p.id}" aria-label="Mehr Infos zu ${p.name}">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <title>Mehr Infos zu ${p.name}</title>
-            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
-            <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2"/>
-            <circle cx="12" cy="8" r="1" fill="currentColor"/>
+            <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
         </div>
@@ -139,6 +136,17 @@ function setupInteractions() {
       } else {
         details.setAttribute('hidden','');
         btn.setAttribute('aria-expanded','false');
+      }
+    });
+  });
+
+  // Toggle details when clicking on the product card
+  document.querySelectorAll('.product').forEach(card => {
+    card.addEventListener('click', (e) => {
+      // ignore clicks on the chevron button to avoid duplicate toggle
+      if (!e.target.closest('button.expand')) {
+        const btn = card.querySelector('button.expand');
+        btn.click();
       }
     });
   });
