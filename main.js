@@ -36,15 +36,15 @@ fetch('data.json')
       prodDiv.className = 'product';
       prodDiv.innerHTML = `
         <div class="product-header">
-          <button class="btn expand" aria-expanded="false" aria-controls="details-${p.id}" aria-label="Mehr Infos zu ${p.name}">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <title>Mehr Infos zu ${p.name}</title>
-              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
-              <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2"/>
-              <circle cx="12" cy="8" r="1" fill="currentColor"/>
-            </svg>
-          </button>
-          <h3>${p.name}</h3>
+        <h3>${p.name}</h3>
+        <button class="btn expand" aria-expanded="false" aria-controls="details-${p.id}" aria-label="Mehr Infos zu ${p.name}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <title>Mehr Infos zu ${p.name}</title>
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+            <line x1="12" y1="16" x2="12" y2="12" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="8" r="1" fill="currentColor"/>
+          </svg>
+        </button>
         </div>
         <p>${p.description}</p>
         <div id="details-${p.id}" class="product-details" hidden>
@@ -173,4 +173,15 @@ function setupInteractions() {
       menuToggle.setAttribute('aria-expanded', 'false');
     });
   });
+
+  // Smooth scroll for "Jetzt entdecken" button with header offset
+  const discoverBtn = document.querySelector('.hero .btn');
+  if (discoverBtn) {
+    discoverBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = discoverBtn.getAttribute('href');
+      const navLink = document.querySelector(`header nav a[href="${href}"]`);
+      if (navLink) navLink.click();
+    });
+  }
 }
