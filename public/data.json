@@ -35,6 +35,7 @@
       {
         "id": "piroggen",
         "name": "Piroggen (Colțunași)",
+        "mainImage": "products/coltunasi.jpg",
         "description": "Rumänische Teigtaschen (ähnlich den russischen Pelmeni) mit cremiger Hüttenkäse-Füllung – weich, herzhaft und von Hand gemacht für echten Hausmannskost-Genuss.",
         "allergens": [
           "Gluten",
@@ -55,6 +56,7 @@
       {
         "id": "frischkaese",
         "name": "Frischkäse-Taler (Brânzoaice)",
+        "mainImage": "products/branzoaice.jpg",
         "description": "Verführerisch duftende, goldbraun gebackene Taler aus luftigem Frischkäse-Teig – perfekt für ein genussvolles Frühstück oder einen Snack zwischendurch.",
         "allergens": [
           "Milch",
@@ -73,6 +75,7 @@
       {
         "id": "pancakes",
         "name": "Mini-Banana-Pancakes",
+        "mainImage": "products/pancakes.jpg",
         "description": "Fluffige, nach Banane duftende Mini-Pancakes mit zartschmelzenden Schokotropfen und extra Protein – ein süßer, sättigender Genuss für Groß und Klein.",
         "allergens": [
           "Gluten",

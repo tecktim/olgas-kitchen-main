@@ -7,6 +7,7 @@ export function renderProducts(products) {
     const prodDiv = document.createElement('div');
     prodDiv.className = 'product';
     prodDiv.innerHTML = `
+      <img class="product-image" src="${p.mainImage}" alt="${p.name}" loading="lazy">
       <div class="product-header">
         <h3>${p.name}</h3>
         <button class="btn expand" aria-expanded="false" aria-controls="details-${p.id}" aria-label="Mehr Infos zu ${p.name}">
