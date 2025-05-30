@@ -194,6 +194,7 @@ section + section { border-top:4px solid var(--color-accent); }
   display:flex; flex-direction:column;
   transition: transform var(--duration), box-shadow var(--duration);
   box-shadow: var(--shadow);
+  position: relative;
 }
 .product:hover, .product:focus-within {
   transform: translateY(-4px); box-shadow:var(--shadow-hover);
@@ -257,6 +258,36 @@ section + section { border-top:4px solid var(--color-accent); }
   aspect-ratio: 4 / 3;
   margin-bottom: var(--spacing);
   box-shadow: var(--product-shadow-inset);
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Overlay für Serviervorschlag */
+.product-overlay {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  left: auto;
+  background: rgba(255,255,255,0.85);
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.2em 0.8em;
+  border-radius: 0.8em 0.2em 0.8em 0.8em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  z-index: 2;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  /* Overlay direkt über das Bild legen */
+  /* Eltern-Container für das Bild muss position: relative haben! */
+}
+
+/* Bild-Wrapper für Overlay */
+.product-image-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
 }
 
 /* Scrollbar styling */
@@ -448,5 +479,13 @@ section.flash {
 /* Hover Overrides */
 .menu-toggle:hover, .menu-toggle:focus {
   background: rgba(0, 0, 0, 0.1);
+}
+
+.product:hover .product-overlay,
+.product:focus-within .product-overlay {
+  background: linear-gradient(90deg, #fff 70%, #f3e3f0 100%);
+  color: var(--color-accent);
+  box-shadow: 0 2px 8px rgba(132,59,120,0.10);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
