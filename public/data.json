@@ -1,60 +1,91 @@
 {
   "siteTitle": "Olga’s Kitchen",
   "navLinks": [
-    { "href": "#home", "text": "Home" },
-    { "href": "#produkte", "text": "Produkte" },
-    { "href": "#bestellen", "text": "Bestellen" },
-    { "href": "#feedback", "text": "Feedback" },
-    { "href": "#kontakt", "text": "Kontakt" }
+    {
+      "href": "#home",
+      "text": "Home"
+    },
+    {
+      "href": "#produkte",
+      "text": "Produkte"
+    },
+    {
+      "href": "#bestellen",
+      "text": "Bestellen"
+    },
+    {
+      "href": "#feedback",
+      "text": "Feedback"
+    },
+    {
+      "href": "#kontakt",
+      "text": "Kontakt"
+    }
   ],
   "sections": {
     "home": {
       "heading": "Traditionelle Küche für deinen Alltag – einfach vorbestellen & genießen",
-      "text": "Handgemachte Gerichte aus unserer Familienküche: Piroggen, Frischkäse-Taler & Mini-Banana-Pancakes.",
-      "button": { "href": "#produkte", "text": "Jetzt entdecken" }
+      "text": "Handgemachte Tiefkühlgerichte aus unserer Familienküche bringen traditionellen Geschmack auf deinen Tisch – einfach vorbestellen und in Minuten genießen. Von herzhaften Piroggen (Colțunași) – rumänische Teigtaschen ähnlich den russischen Pelmeni – bis zu fluffigen Mini-Banana-Pancakes ist für jeden Genießer etwas dabei. Ideal für Foodies und Berufstätige, die hausgemachte Küche ohne Aufwand erleben möchten.",
+      "button": {
+        "href": "#produkte",
+        "text": "Jetzt entdecken"
+      }
     },
     "products": [
       {
         "id": "piroggen",
         "name": "Piroggen (Colțunași)",
-        "description": "Rumänische Teigtaschen mit Hüttenkäse – weich, herzhaft & handgemacht.",
-        "allergens": ["Gluten", "Milch", "Ei"],
+        "description": "Rumänische Teigtaschen (ähnlich den russischen Pelmeni) mit cremiger Hüttenkäse-Füllung – weich, herzhaft und von Hand gemacht für echten Hausmannskost-Genuss.",
+        "allergens": [
+          "Gluten",
+          "Milch",
+          "Ei"
+        ],
         "details": {
           "packung": "2 Portionen (500 g gefrorenes Produkt) – ideal als Hauptgericht oder zum Teilen.",
           "zubereitung": [
-            "Wasser zum Kochen bringen, salzen.",
-            "Piroggen 5–7 Min. garen.",
-            "Abgießen, mit Butter schwenken."
+            "Wasser zum Kochen bringen und salzen.",
+            "Piroggen 5–7 Minuten garen, bis sie oben schwimmen.",
+            "Abgießen und mit etwas Butter schwenken."
           ],
-          "serviervorschlaege": "Mit Schmand & frischen Kräutern.",
+          "serviervorschlaege": "Mit Schmand und frischen Kräutern servieren.",
           "naehrwerte": "225 kcal | 10,8 g Eiweiß | 24,5 g KH | 9,4 g Fett"
         }
       },
       {
         "id": "frischkaese",
         "name": "Frischkäse-Taler (Brânzoaice)",
-        "description": "Luftig gebackene Taler aus Frischkäse-Teig – ideal zum Frühstück oder Snack.",
-        "allergens": ["Milch", "Gluten", "Ei"],
+        "description": "Verführerisch duftende, goldbraun gebackene Taler aus luftigem Frischkäse-Teig – perfekt für ein genussvolles Frühstück oder einen Snack zwischendurch.",
+        "allergens": [
+          "Milch",
+          "Gluten",
+          "Ei"
+        ],
         "details": {
           "packung": "12 Taler (ca. 360 g gefrorenes Produkt) – perfekt für Frühstück oder Snack.",
           "zubereitung": [
-            "Im vorgeheizten Ofen bei 180 °C Umluft 25–30 Min. backen (zwischen­durch wenden)."
+            "Im vorgeheizten Ofen bei 180 °C Umluft 25–30 Minuten backen (zwischendurch wenden), bis die Taler goldbraun sind."
           ],
-          "serviervorschlaege": "Mit Joghurt, Schmand & Beeren genießen.",
+          "serviervorschlaege": "Mit Joghurt, Schmand und frischen Beeren genießen.",
           "naehrwerte": "156 kcal | 14 g Eiweiß | 22 g KH | 4 g Fett"
         }
       },
       {
         "id": "pancakes",
         "name": "Mini-Banana-Pancakes",
-        "description": "Fluffige Pancakes mit Banane, extra Eiweiß & Schokotropfen – proteinreich & lecker.",
-        "allergens": ["Gluten", "Milch", "Ei", "Soja*"],
+        "description": "Fluffige, nach Banane duftende Mini-Pancakes mit zartschmelzenden Schokotropfen und extra Protein – ein süßer, sättigender Genuss für Groß und Klein.",
+        "allergens": [
+          "Gluten",
+          "Milch",
+          "Ei",
+          "Soja*"
+        ],
         "details": {
           "packung": "12 Stück (ca. 240 g gefrorenes Produkt) – handlich & snackfertig.",
           "zubereitung": [
             "Gefrorene Pancakes (2–4 Stück) im Toaster auf höchster Stufe toasten, bis sie goldbraun sind."
           ],
-          "serviervorschlaege": "Mit Beeren, Honig, Joghurt oder pur als Snack 😊.",
+          "serviervorschlaege": "Mit frischen Beeren, Honig oder Joghurt toppen – oder einfach pur snacken 😊.",
           "naehrwerte": "225 kcal | 7,3 g Eiweiß | 32,3 g KH | 7,2 g Fett"
         }
       }
@@ -62,25 +93,53 @@
     "order": {
       "heading": "So läuft deine Bestellung ab",
       "steps": [
-        { "icon": "1️⃣", "title": "Auswählen", "text": "Gericht & Menge wählen." },
-        { "icon": "2️⃣", "title": "Bestätigung", "text": "Bestätigung per E-Mail." },
-        { "icon": "3️⃣", "title": "Abholen", "text": "Abholung oder Lieferung." }
+        {
+          "icon": "1️⃣",
+          "title": "Auswählen",
+          "text": "Wähle dein Lieblingsgericht und die gewünschte Menge aus."
+        },
+        {
+          "icon": "2️⃣",
+          "title": "Bestätigung",
+          "text": "Du erhältst eine Bestätigung deiner Bestellung per E-Mail."
+        },
+        {
+          "icon": "3️⃣",
+          "title": "Abholen",
+          "text": "Abholung vor Ort oder Lieferung zu dir nach Hause."
+        }
       ],
-      "button": { "href": "https://order.olgas-kitchen.de", "text": "Bestellung starten", "external": true }
+      "button": {
+        "href": "https://order.olgas-kitchen.de",
+        "text": "Bestellung starten",
+        "external": true
+      }
     },
     "feedback": {
       "heading": "Dein Feedback zählt!",
-      "text": "Wie können wir noch besser werden? Unkompliziert feedback geben.",
-      "button": { "href": "https://feedback.olgas-kitchen.de", "text": "Feedback geben", "external": true }
+      "text": "Wir sind gespannt auf deine Meinung. Teile uns dein Feedback mit und hilf uns, noch besser zu werden!",
+      "button": {
+        "href": "https://feedback.olgas-kitchen.de",
+        "text": "Feedback geben",
+        "external": true
+      }
     },
     "contact": {
       "heading": "Kontakt",
-      "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
-      "button": { "href": "https://wa.me/4917668291438", "text": "WhatsApp Chat starten", "ariaLabel": "WhatsApp-Chat mit Olga’s Kitchen starten", "external": true }
+      "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen (Kreis Sigmaringen)",
+      "button": {
+        "href": "https://wa.me/4917668291438",
+        "text": "WhatsApp Chat starten",
+        "ariaLabel": "WhatsApp-Chat mit Olga’s Kitchen starten",
+        "external": true
+      }
     },
     "footer": {
       "text": "© 2025 Olga’s Kitchen – Alle Rechte vorbehalten.",
-      "backToTop": { "href": "#home", "text": "Nach oben" }
+      "backToTop": {
+        "href": "#home",
+        "text": "Nach oben"
+      }
     }
   }
 }
