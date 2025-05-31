@@ -2,7 +2,8 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/',              // Use root base for custom domain deployment
+  base: '/',               // “/” is correct for a custom‐domain at the root
+  publicDir: 'public',     // static assets live here
   server: {
     port: 3000,
     open: true,
