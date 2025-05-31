@@ -72,6 +72,58 @@ export function renderProducts(products) {
           overlayEl.style.opacity = '1';
         }, 200);
       });
+     // Swipe handling for touch and pointer events
+     let startX = null;
+     // Touch events for mobile
+     wrapper.addEventListener('touchstart', e => {
+       startX = e.changedTouches[0].clientX;
+     });
+     wrapper.addEventListener('touchend', e => {
+       if (startX === null) return;
+       const endX = e.changedTouches[0].clientX;
+       const diff = endX - startX;
+       if (Math.abs(diff) > 30) {
+         // Determine swipe direction
+         if (diff > 0) {
+           currentIndex = (currentIndex - 1 + images.length) % images.length;
+         } else {
+           currentIndex = (currentIndex + 1) % images.length;
+         }
+         // Fade transition
+         imgEl.style.opacity = '0';
+         overlayEl.style.opacity = '0';
+         setTimeout(() => {
+           updateImage();
+           imgEl.style.opacity = '1';
+           overlayEl.style.opacity = '1';
+         }, 200);
+       }
+       startX = null;
+     });
+     // Pointer events for desktop drag
+     wrapper.addEventListener('pointerdown', e => {
+       startX = e.clientX;
+     });
+     wrapper.addEventListener('pointerup', e => {
+       if (startX === null) return;
+       const endX = e.clientX;
+       const diff = endX - startX;
+       if (Math.abs(diff) > 30) {
+         if (diff > 0) {
+           currentIndex = (currentIndex - 1 + images.length) % images.length;
+         } else {
+           currentIndex = (currentIndex + 1) % images.length;
+         }
+         imgEl.style.opacity = '0';
+         overlayEl.style.opacity = '0';
+         setTimeout(() => {
+           updateImage();
+           imgEl.style.opacity = '1';
+           overlayEl.style.opacity = '1';
+         }, 200);
+       }
+       startX = null;
+     });
     } else {
       wrapper.classList.add('single-image');
     }
