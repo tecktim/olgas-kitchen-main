@@ -3,8 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: '.',
-  base: './public',
-  publicDir: 'public',
+  base: './', // Use relative paths for assets
   build: {
     outDir: 'dist',
     rollupOptions: {
