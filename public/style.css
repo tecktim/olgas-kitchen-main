@@ -502,7 +502,11 @@ section.flash {
   .btn, .btn-whatsapp {
     width: 100%;
   }
-  section { padding: var(--spacing) .5rem; }
+  section {
+    padding: var(--spacing) .5rem;
+    max-width: 100%;
+    margin: 0;
+  }
   /* Disable text selection on mobile */
   *, *::before, *::after {
     -webkit-user-select: none;
