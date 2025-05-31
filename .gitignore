@@ -2,7 +2,8 @@
 node_modules/
 
 # Vite build output
-dist/
+dist/*
+!dist/data.json
 .vite/
 
 # Logs
@@ -25,6 +26,3 @@ Thumbs.db
 
 # Miscellaneous
 *.log
-
-# Ignore root data.json (public/data.json is used)
-/data.json
