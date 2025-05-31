@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
+    "deploy": "node deploy-ghpages.js",
     "serve": "npm run build && npm run deploy"
   },
   "devDependencies": {
