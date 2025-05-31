@@ -173,9 +173,9 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 /* Sections */
 section {
-  max-width:900px; margin:0 auto;
+  max-width:80%; margin:0 auto;
   padding: calc(var(--spacing)*3) var(--spacing);
-  text-align:center;
+  text-align: center;
 }
 section:nth-child(even) { background: var(--color-bg-dark); }
 section + section { border-top:4px solid var(--color-accent); }
