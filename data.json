@@ -39,6 +39,14 @@
           {
             "src": "products/01/00.jpg",
             "overlayText": "Serviervorschlag"
+          },
+          {
+            "src": "products/ComingSoon.jpg",
+            "overlayText": "Herstellung"
+          },
+          {
+            "src": "products/ComingSoon.jpg",
+            "overlayText": "Zubereitung"
           }
         ],
         "description": "Rumänische Teigtaschen (ähnlich den russischen Pelmeni) mit cremiger Hüttenkäse-Füllung – weich, herzhaft und von Hand gemacht für echten Hausmannskost-Genuss.",
@@ -65,6 +73,14 @@
           {
             "src": "products/00/00.jpg",
             "overlayText": "Serviervorschlag"
+          },
+          {
+            "src": "products/ComingSoon.jpg",
+            "overlayText": "Herstellung"
+          },
+          {
+            "src": "products/ComingSoon.jpg",
+            "overlayText": "Zubereitung"
           }
         ],
         "description": "Verführerisch duftende, goldbraun gebackene Taler aus luftigem Frischkäse-Teig – perfekt für ein genussvolles Frühstück oder einen Snack zwischendurch.",
@@ -89,6 +105,14 @@
           {
             "src": "products/02/00.jpg",
             "overlayText": "Serviervorschlag"
+          },
+          {
+            "src": "products/ComingSoon.jpg",
+            "overlayText": "Herstellung"
+          },
+          {
+            "src": "products/ComingSoon.jpg",
+            "overlayText": "Zubereitung"
           }
         ],
         "description": "Fluffige, nach Banane duftende Mini-Pancakes mit zartschmelzenden Schokotropfen und extra Protein – ein süßer, sättigender Genuss für Groß und Klein.",
