@@ -41,40 +41,39 @@ export function renderProducts(products) {
     const imgEl = prodDiv.querySelector('img.product-image');
     const overlayEl = prodDiv.querySelector('div.product-overlay');
     let currentIndex = 0;
-    // Enable fade transition for image swaps
-    imgEl.style.opacity = '1';
-    imgEl.style.transition = 'opacity 0.3s ease-in-out';
-    // Enable fade transition for overlay swaps
-    overlayEl.style.opacity = '1';
-    overlayEl.style.transition = 'opacity 0.3s ease-in-out';
-    function updateImage() {
-      const { src, overlayText } = images[currentIndex];
-      imgEl.src = import.meta.env.BASE_URL + src;
-      overlayEl.textContent = overlayText;
-    }
-    // Support click on image area: left half = prev, right half = next
     const wrapper = prodDiv.querySelector('.product-image-wrapper');
-    // Hide chevrons if only one image
-    if (images.length === 1) {
+    if (images.length > 1) {
+      // Enable fade transition for image swaps
+      imgEl.style.opacity = '1';
+      imgEl.style.transition = 'opacity 0.3s ease-in-out';
+      // Enable fade transition for overlay swaps
+      overlayEl.style.opacity = '1';
+      overlayEl.style.transition = 'opacity 0.3s ease-in-out';
+      function updateImage() {
+        const { src, overlayText } = images[currentIndex];
+        imgEl.src = import.meta.env.BASE_URL + src;
+        overlayEl.textContent = overlayText;
+      }
+      wrapper.addEventListener('click', e => {
+        e.stopPropagation();
+        const rect = wrapper.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+        if (clickX < rect.width / 2) {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+        } else {
+          currentIndex = (currentIndex + 1) % images.length;
+        }
+        // fade out, change image, then fade in
+        imgEl.style.opacity = '0';
+        overlayEl.style.opacity = '0';
+        setTimeout(() => {
+          updateImage();
+          imgEl.style.opacity = '1';
+          overlayEl.style.opacity = '1';
+        }, 200);
+      });
+    } else {
       wrapper.classList.add('single-image');
     }
-    wrapper.addEventListener('click', e => {
-      e.stopPropagation();
-      const rect = wrapper.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
-      if (clickX < rect.width / 2) {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-      } else {
-        currentIndex = (currentIndex + 1) % images.length;
-      }
-      // fade out, change image, then fade in
-      imgEl.style.opacity = '0';
-      overlayEl.style.opacity = '0';
-      setTimeout(() => {
-        updateImage();
-        imgEl.style.opacity = '1';
-        overlayEl.style.opacity = '1';
-      }, 200);
-    });
     });
 }
