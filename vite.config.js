@@ -2,26 +2,12 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/',               // “/” is correct for a custom‐domain at the root
-  publicDir: 'public',     // static assets live here
-  server: {
-    port: 3000,
-    open: true,
-    strictPort: true,
-    host: 'localhost',
-    cors: true,
-    hmr: {
-      protocol: 'ws',
-      host: 'localhost',
-      port: 3000,
-    },
-  },
+  base: '/',            // root for custom domain
+  publicDir: 'public',  // static assets
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      },
+      input: { main: resolve(__dirname, 'index.html') },
     },
   },
 });
