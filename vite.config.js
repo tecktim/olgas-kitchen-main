@@ -3,7 +3,6 @@ import { resolve } from 'path';
 
 export default defineConfig({
   base: '/',              // Use root base for custom domain deployment
-  publicDir: 'public',    // Public assets directory
   server: {
     port: 3000,
     open: true,
