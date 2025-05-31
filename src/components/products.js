@@ -9,8 +9,7 @@ export function renderProducts(products) {
     prodDiv.innerHTML = `
       <div class="product-image-wrapper">
         <div class="product-overlay">Serviervorschlag</div>
-        <img class="product-image" src="/${p.mainImage}" alt="${p.name}" loading="lazy">
-      </div>
+        <img class="product-image" src="${import.meta.env.BASE_URL}${p.mainImage}" alt="${p.name}" loading="lazy">      </div>
       <div class="product-header">
         <h3>${p.name}</h3>
         <button class="btn expand" aria-expanded="false" aria-controls="details-${p.id}" aria-label="Mehr Infos zu ${p.name}">
