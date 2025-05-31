@@ -6,10 +6,13 @@ export function renderProducts(products) {
   products.forEach(p => {
     const prodDiv = document.createElement('div');
     prodDiv.className = 'product';
+  // Store images data for gallery interactions
+    prodDiv.dataset.images = JSON.stringify(p.images);
     prodDiv.innerHTML = `
       <div class="product-image-wrapper">
-        <div class="product-overlay">Serviervorschlag</div>
-        <img class="product-image" src="${import.meta.env.BASE_URL}${p.mainImage}" alt="${p.name}" loading="lazy">      </div>
+        <div class="product-overlay">${p.images[0].overlayText}</div>
+        <img class="product-image" src="${import.meta.env.BASE_URL}${p.images[0].src}" alt="${p.name}" loading="lazy">
+      </div>
       <div class="product-header">
         <h3>${p.name}</h3>
         <button class="btn expand" aria-expanded="false" aria-controls="details-${p.id}" aria-label="Mehr Infos zu ${p.name}">
@@ -33,5 +36,45 @@ export function renderProducts(products) {
       </div>
     `;
     productsDiv.appendChild(prodDiv);
-  });
+  // Setup gallery navigation
+    const images = p.images;
+    const imgEl = prodDiv.querySelector('img.product-image');
+    const overlayEl = prodDiv.querySelector('div.product-overlay');
+    let currentIndex = 0;
+    // Enable fade transition for image swaps
+    imgEl.style.opacity = '1';
+    imgEl.style.transition = 'opacity 0.3s ease-in-out';
+    // Enable fade transition for overlay swaps
+    overlayEl.style.opacity = '1';
+    overlayEl.style.transition = 'opacity 0.3s ease-in-out';
+    function updateImage() {
+      const { src, overlayText } = images[currentIndex];
+      imgEl.src = import.meta.env.BASE_URL + src;
+      overlayEl.textContent = overlayText;
+    }
+    // Support click on image area: left half = prev, right half = next
+    const wrapper = prodDiv.querySelector('.product-image-wrapper');
+    // Hide chevrons if only one image
+    if (images.length === 1) {
+      wrapper.classList.add('single-image');
+    }
+    wrapper.addEventListener('click', e => {
+      e.stopPropagation();
+      const rect = wrapper.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      if (clickX < rect.width / 2) {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+      } else {
+        currentIndex = (currentIndex + 1) % images.length;
+      }
+      // fade out, change image, then fade in
+      imgEl.style.opacity = '0';
+      overlayEl.style.opacity = '0';
+      setTimeout(() => {
+        updateImage();
+        imgEl.style.opacity = '1';
+        overlayEl.style.opacity = '1';
+      }, 200);
+    });
+    });
 }
