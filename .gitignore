@@ -25,6 +25,3 @@ Thumbs.db
 
 # Miscellaneous
 *.log
-
-# Ignore root data.json (public/data.json is used)
-/data.json
