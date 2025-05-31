@@ -37,7 +37,7 @@
         "name": "Piroggen (Colțunași)",
         "images": [
           {
-            "src": "products/01/00.jpg",
+            "src": "products/Piroggen/Serviervorschlag.jpg",
             "overlayText": "Serviervorschlag"
           },
           {
@@ -71,7 +71,7 @@
         "name": "Frischkäse-Taler (Brânzoaice)",
         "images": [
           {
-            "src": "products/00/00.jpg",
+            "src": "products/FrischkaeseTaler/Serviervorschlag.jpg",
             "overlayText": "Serviervorschlag"
           },
           {
@@ -103,7 +103,7 @@
         "name": "Mini-Banana-Pancakes",
         "images": [
           {
-            "src": "products/02/00.jpg",
+            "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
             "overlayText": "Serviervorschlag"
           },
           {
