@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
+  <script>
+    (function(){
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get('lang') || 'de';
+      document.documentElement.lang = lang;
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +35,7 @@
     .loaded .hero { opacity: 1; visibility: visible; transition: opacity 1s ease-in; }
   </style>
   <title>Olga’s Kitchen</title>
-  <script type="module" crossorigin src="/assets/main-ec5f9325.js"></script>
+  <script type="module" crossorigin src="/assets/main-287ed256.js"></script>
 </head>
 <body>
 

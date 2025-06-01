@@ -1,197 +1,803 @@
 {
-  "siteTitle": "Olga’s Kitchen",
-  "navLinks": [
+  "languages": [
     {
-      "href": "#home",
-      "text": "Home"
+      "code": "de",
+      "icon": "localeIcons/german-flag-small.jpg",
+      "href": "?lang=de"
     },
     {
-      "href": "#produkte",
-      "text": "Produkte"
+      "code": "en",
+      "icon": "localeIcons/english-flag-small.jpg",
+      "href": "?lang=en"
     },
     {
-      "href": "#bestellen",
-      "text": "Bestellen"
+      "code": "ro",
+      "icon": "localeIcons/romanian-flag-small.jpg",
+      "href": "?lang=ro"
     },
     {
-      "href": "#feedback",
-      "text": "Feedback"
-    },
-    {
-      "href": "#kontakt",
-      "text": "Kontakt"
+      "code": "ru",
+      "icon": "localeIcons/russian-flag-small.jpg",
+      "href": "?lang=ru"
     }
   ],
-  "languages": [
-    
-  ],
-  "sections": {
-    "home": {
-      "heading": "Traditionelle Küche für deinen Alltag – einfach vorbestellen & genießen",
-      "text": "Willkommen bei Olga’s Kitchen – deiner Adresse für authentische, handgemachte Tiefkühlgerichte nach Familienrezept. Genieße traditionelle osteuropäische Hausmannskost, frisch und gesund, die du in wenigen Minuten zu Hause zubereiten kannst. Ideal für Foodies und Berufstätige im Landkreis Sigmaringen, die sich echtes Heimatgefühl auf den Teller holen wollen.",
-      "button": {
+  "de": {
+    "siteTitle": "Olga’s Kitchen",
+    "navLinks": [
+      {
+        "href": "#home",
+        "text": "Home"
+      },
+      {
         "href": "#produkte",
-        "text": "Jetzt entdecken"
-      }
-    },
-    "products": [
-      {
-        "id": "frischkaese",
-        "name": "Frischkäse-Taler (Brânzoaice)",
-        "images": [
-          {
-            "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
-            "overlayText": "Serviervorschlag"
-          },
-          {
-            "src": "products/FrischkaeseTaler/Herstellung1.jpg",
-            "overlayText": "Herstellung"
-          },
-          {
-            "src": "products/FrischkaeseTaler/Herstellung2.jpg",
-            "overlayText": "Herstellung"
-          },
-          {
-            "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
-            "overlayText": "Zubereitung"
-          },
-          {
-            "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
-            "overlayText": "Zubereitung"
-          }
-        ],
-        "description": "Verführerisch duftende, goldbraun gebackene Taler aus luftigem Frischkäse-Teig – perfekt für ein genussvolles Frühstück oder einen Snack zwischendurch.",
-        "allergens": [
-          "Milch",
-          "Gluten",
-          "Ei"
-        ],
-        "details": {
-          "packung": "12 Taler (ca. 360 g gefrorenes Produkt) – perfekt für Frühstück oder Snack.",
-          "zubereitung": [
-            "Im vorgeheizten Ofen bei 180 °C Umluft 25–30 Minuten backen (zwischendurch wenden), bis die Taler goldbraun sind."
-          ],
-          "serviervorschlaege": "Mit Joghurt, Schmand und frischen Beeren genießen.",
-          "naehrwerte": "156 kcal | 14 g Eiweiß | 22 g KH | 4 g Fett"
-        }
+        "text": "Produkte"
       },
       {
-        "id": "piroggen",
-        "name": "Piroggen (Colțunași)",
-        "images": [
-          {
-            "src": "products/Piroggen/Serviervorschlag.jpg",
-            "overlayText": "Serviervorschlag"
-          },
-          {
-            "src": "products/ComingSoon.jpg",
-            "overlayText": "Herstellung"
-          },
-          {
-            "src": "products/ComingSoon.jpg",
-            "overlayText": "Zubereitung"
-          }
-        ],
-        "description": "Rumänische Teigtaschen (ähnlich den russischen Pelmeni) mit cremiger Hüttenkäse-Füllung – weich, herzhaft und von Hand gemacht für echten Hausmannskost-Genuss.",
-        "allergens": [
-          "Gluten",
-          "Milch",
-          "Ei"
-        ],
-        "details": {
-          "packung": "2 Portionen (500 g gefrorenes Produkt) – ideal als Hauptgericht oder zum Teilen.",
-          "zubereitung": [
-            "Wasser zum Kochen bringen und salzen.",
-            "Piroggen 5–7 Minuten garen, bis sie oben schwimmen.",
-            "Abgießen und mit etwas Butter schwenken."
-          ],
-          "serviervorschlaege": "Mit Schmand und frischen Kräutern servieren.",
-          "naehrwerte": "225 kcal | 10,8 g Eiweiß | 24,5 g KH | 9,4 g Fett"
-        }
+        "href": "#bestellen",
+        "text": "Bestellen"
       },
       {
-        "id": "pancakes",
-        "name": "Mini-Banana-Pancakes",
-        "images": [
-          {
-            "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
-            "overlayText": "Serviervorschlag"
-          },
-          {
-            "src": "products/ComingSoon.jpg",
-            "overlayText": "Herstellung"
-          },
-          {
-            "src": "products/ComingSoon.jpg",
-            "overlayText": "Zubereitung"
-          }
-        ],
-        "description": "Fluffige, nach Banane duftende Mini-Pancakes mit zartschmelzenden Schokotropfen und extra Protein – ein süßer, sättigender Genuss für Groß und Klein.",
-        "allergens": [
-          "Gluten",
-          "Milch",
-          "Ei",
-          "Soja*"
-        ],
-        "details": {
-          "packung": "12 Stück (ca. 240 g gefrorenes Produkt) – handlich & snackfertig.",
-          "zubereitung": [
-            "Gefrorene Pancakes (2–4 Stück) im Toaster auf höchster Stufe toasten, bis sie goldbraun sind."
-          ],
-          "serviervorschlaege": "Mit frischen Beeren, Honig oder Joghurt toppen – oder einfach pur snacken 😊.",
-          "naehrwerte": "225 kcal | 7,3 g Eiweiß | 32,3 g KH | 7,2 g Fett"
-        }
+        "href": "#feedback",
+        "text": "Feedback"
+      },
+      {
+        "href": "#kontakt",
+        "text": "Kontakt"
       }
     ],
-    "order": {
-      "heading": "So läuft deine Bestellung ab",
-      "steps": [
+    "sections": {
+      "home": {
+        "heading": "Traditionelle Küche für deinen Alltag – einfach vorbestellen & genießen",
+        "text": "Willkommen bei Olga’s Kitchen – deiner Adresse für authentische, handgemachte Tiefkühlgerichte nach Familienrezept. Genieße traditionelle osteuropäische Hausmannskost, frisch und gesund, die du in wenigen Minuten zu Hause zubereiten kannst. Ideal für Foodies und Berufstätige im Landkreis Sigmaringen, die sich echtes Heimatgefühl auf den Teller holen wollen.",
+        "button": {
+          "href": "#produkte",
+          "text": "Jetzt entdecken"
+        }
+      },
+      "products": [
         {
-          "icon": "1️⃣",
-          "title": "Auswählen",
-          "text": "Wähle dein Lieblingsgericht und die gewünschte Menge aus."
+          "id": "frischkaese",
+          "name": "Frischkäse-Taler (Brânzoaice)",
+          "images": [
+            {
+              "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung1.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung2.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
+              "overlayText": "Zubereitung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Verführerisch duftende, goldbraun gebackene Taler aus luftigem Frischkäse-Teig – perfekt für ein genussvolles Frühstück oder einen Snack zwischendurch.",
+          "allergens": [
+            "Milch",
+            "Gluten",
+            "Ei"
+          ],
+          "details": {
+            "packung": "12 Taler (ca. 360 g gefrorenes Produkt) – perfekt für Frühstück oder Snack.",
+            "zubereitung": [
+              "Im vorgeheizten Ofen bei 180 °C Umluft 25–30 Minuten backen (zwischendurch wenden), bis die Taler goldbraun sind."
+            ],
+            "serviervorschlaege": "Mit Joghurt, Schmand und frischen Beeren genießen.",
+            "naehrwerte": "156 kcal | 14 g Eiweiß | 22 g KH | 4 g Fett"
+          }
         },
         {
-          "icon": "2️⃣",
-          "title": "Bestätigung",
-          "text": "Du erhältst eine Bestätigung deiner Bestellung per E-Mail."
+          "id": "piroggen",
+          "name": "Piroggen (Colțunași)",
+          "images": [
+            {
+              "src": "products/Piroggen/Serviervorschlag.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Rumänische Teigtaschen (ähnlich den russischen Pelmeni) mit cremiger Hüttenkäse-Füllung – weich, herzhaft und von Hand gemacht für echten Hausmannskost-Genuss.",
+          "allergens": [
+            "Gluten",
+            "Milch",
+            "Ei"
+          ],
+          "details": {
+            "packung": "2 Portionen (500 g gefrorenes Produkt) – ideal als Hauptgericht oder zum Teilen.",
+            "zubereitung": [
+              "Wasser zum Kochen bringen und salzen.",
+              "Piroggen 5–7 Minuten garen, bis sie oben schwimmen.",
+              "Abgießen und mit etwas Butter schwenken."
+            ],
+            "serviervorschlaege": "Mit Schmand und frischen Kräutern servieren.",
+            "naehrwerte": "225 kcal | 10,8 g Eiweiß | 24,5 g KH | 9,4 g Fett"
+          }
         },
         {
-          "icon": "3️⃣",
-          "title": "Abholen",
-          "text": "Abholung vor Ort oder Lieferung zu dir nach Hause."
+          "id": "pancakes",
+          "name": "Mini-Banana-Pancakes",
+          "images": [
+            {
+              "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Fluffige, nach Banane duftende Mini-Pancakes mit zartschmelzenden Schokotropfen und extra Protein – ein süßer, sättigender Genuss für Groß und Klein.",
+          "allergens": [
+            "Gluten",
+            "Milch",
+            "Ei",
+            "Soja*"
+          ],
+          "details": {
+            "packung": "12 Stück (ca. 240 g gefrorenes Produkt) – handlich & snackfertig.",
+            "zubereitung": [
+              "Gefrorene Pancakes (2–4 Stück) im Toaster auf höchster Stufe toasten, bis sie goldbraun sind."
+            ],
+            "serviervorschlaege": "Mit frischen Beeren, Honig oder Joghurt toppen – oder einfach pur snacken 😊.",
+            "naehrwerte": "225 kcal | 7,3 g Eiweiß | 32,3 g KH | 7,2 g Fett"
+          }
         }
       ],
-      "button": {
-        "href": "https://order.olgas-kitchen.de",
-        "text": "Bestellung starten",
-        "external": true
+      "order": {
+        "heading": "So läuft deine Bestellung ab",
+        "steps": [
+          {
+            "icon": "1️⃣",
+            "title": "Auswählen",
+            "text": "Wähle dein Lieblingsgericht und die gewünschte Menge aus."
+          },
+          {
+            "icon": "2️⃣",
+            "title": "Bestätigung",
+            "text": "Du erhältst eine Bestätigung deiner Bestellung per E-Mail."
+          },
+          {
+            "icon": "3️⃣",
+            "title": "Abholen",
+            "text": "Abholung vor Ort oder Lieferung zu dir nach Hause."
+          }
+        ],
+        "button": {
+          "href": "https://order.olgas-kitchen.de",
+          "text": "Bestellung starten",
+          "external": true
+        }
+      },
+      "feedback": {
+        "heading": "Dein Feedback zählt!",
+        "text": "Wir sind gespannt auf deine Meinung. Teile uns dein Feedback mit und hilf uns, noch besser zu werden!",
+        "button": {
+          "href": "https://feedback.olgas-kitchen.de",
+          "text": "Feedback geben",
+          "external": true
+        }
+      },
+      "contact": {
+        "heading": "Kontakt",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "button": {
+          "href": "https://wa.me/4917668291438",
+          "text": "WhatsApp Chat starten",
+          "ariaLabel": "WhatsApp-Chat mit Olga’s Kitchen starten",
+          "external": true
+        }
+      },
+      "footer": {
+        "text": "© 2025 Olga’s Kitchen – Alle Rechte vorbehalten.",
+        "backToTop": {
+          "href": "#home",
+          "text": "Nach oben"
+        }
       }
-    },
-    "feedback": {
-      "heading": "Dein Feedback zählt!",
-      "text": "Wir sind gespannt auf deine Meinung. Teile uns dein Feedback mit und hilf uns, noch besser zu werden!",
-      "button": {
-        "href": "https://feedback.olgas-kitchen.de",
-        "text": "Feedback geben",
-        "external": true
-      }
-    },
-    "contact": {
-      "heading": "Kontakt",
-      "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
-      "button": {
-        "href": "https://wa.me/4917668291438",
-        "text": "WhatsApp Chat starten",
-        "ariaLabel": "WhatsApp-Chat mit Olga’s Kitchen starten",
-        "external": true
-      }
-    },
-    "footer": {
-      "text": "© 2025 Olga’s Kitchen – Alle Rechte vorbehalten.",
-      "backToTop": {
+    }
+  },
+  "en": {
+    "siteTitle": "Olga’s Kitchen",
+    "navLinks": [
+      {
         "href": "#home",
-        "text": "Nach oben"
+        "text": "Home"
+      },
+      {
+        "href": "#produkte",
+        "text": "Products"
+      },
+      {
+        "href": "#bestellen",
+        "text": "Order"
+      },
+      {
+        "href": "#feedback",
+        "text": "Feedback"
+      },
+      {
+        "href": "#kontakt",
+        "text": "Contact"
+      }
+    ],
+    "sections": {
+      "home": {
+        "heading": "Traditional cuisine for your everyday – pre-order & enjoy",
+        "text": "Welcome to Olga’s Kitchen – your address for authentic, handcrafted frozen meals made from family recipes. Enjoy traditional Eastern European home cooking, fresh and healthy, that you can prepare at home in minutes.",
+        "button": {
+          "href": "#produkte",
+          "text": "Discover now"
+        }
+      },
+      "products": [
+        {
+          "id": "frischkaese",
+          "name": "Frischkäse-Taler (Brânzoaice)",
+          "images": [
+            {
+              "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung1.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung2.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
+              "overlayText": "Zubereitung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Irresistibly fragrant, golden-brown baked patties made from airy fresh cheese dough – perfect for a delightful breakfast or a snack in between.",
+          "allergens": [
+            "Milk",
+            "Gluten",
+            "Egg"
+          ],
+          "details": {
+            "packung": "12 patties (approx. 360 g frozen product) – perfect for breakfast or a snack.",
+            "zubereitung": [
+              "Bake in a preheated oven at 180 °C circulating air for 25–30 minutes (turning halfway), until the patties are golden brown."
+            ],
+            "serviervorschlaege": "Enjoy with yogurt, sour cream, and fresh berries.",
+            "naehrwerte": "156 kcal | 14 g protein | 22 g carbs | 4 g fat"
+          }
+        },
+        {
+          "id": "piroggen",
+          "name": "Piroggen (Colțunași)",
+          "images": [
+            {
+              "src": "products/Piroggen/Serviervorschlag.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Romanian dumplings (similar to Russian Pelmeni) with creamy cottage cheese filling – soft, hearty, and handmade for authentic home-cooked flavor.",
+          "allergens": [
+            "Gluten",
+            "Milk",
+            "Egg"
+          ],
+          "details": {
+            "packung": "2 servings (500 g frozen product) – ideal as a main dish or for sharing.",
+            "zubereitung": [
+              "Bring water to a boil and add salt.",
+              "Cook dumplings for 5–7 minutes until they float to the top.",
+              "Drain and toss with a little butter."
+            ],
+            "serviervorschlaege": "Serve with sour cream and fresh herbs.",
+            "naehrwerte": "225 kcal | 10.8 g protein | 24.5 g carbs | 9.4 g fat"
+          }
+        },
+        {
+          "id": "pancakes",
+          "name": "Mini-Banana-Pancakes",
+          "images": [
+            {
+              "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Fluffy, banana-scented mini pancakes with melting chocolate chips and extra protein – a sweet, satisfying treat for young and old.",
+          "allergens": [
+            "Gluten",
+            "Milk",
+            "Egg",
+            "Soy*"
+          ],
+          "details": {
+            "packung": "12 pieces (approx. 240 g frozen product) – handy & ready-to-snack.",
+            "zubereitung": [
+              "Toast frozen pancakes (2–4 pieces) in a toaster on the highest setting until golden brown."
+            ],
+            "serviervorschlaege": "Top with fresh berries, honey, or yogurt – or enjoy plain 😊.",
+            "naehrwerte": "225 kcal | 7.3 g protein | 32.3 g carbs | 7.2 g fat"
+          }
+        }
+      ],
+      "order": {
+        "heading": "Here's how your order works",
+        "steps": [
+          {
+            "icon": "1️⃣",
+            "title": "Select",
+            "text": "Choose your favorite dish and the desired quantity."
+          },
+          {
+            "icon": "2️⃣",
+            "title": "Confirmation",
+            "text": "You will receive a confirmation of your order by e-mail."
+          },
+          {
+            "icon": "3️⃣",
+            "title": "Pick up",
+            "text": "Pick up on site or delivery to your home."
+          }
+        ],
+        "button": {
+          "href": "https://order.olgas-kitchen.de",
+          "text": "Start order",
+          "external": true
+        }
+      },
+      "feedback": {
+        "heading": "Your feedback matters!",
+        "text": "We are curious about your opinion. Share your feedback with us and help us to become even better!",
+        "button": {
+          "href": "https://feedback.olgas-kitchen.de",
+          "text": "Give feedback",
+          "external": true
+        }
+      },
+      "contact": {
+        "heading": "Contact",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "button": {
+          "href": "https://wa.me/4917668291438",
+          "text": "Start WhatsApp chat",
+          "ariaLabel": "Start WhatsApp chat with Olga’s Kitchen",
+          "external": true
+        }
+      },
+      "footer": {
+        "text": "© 2025 Olga’s Kitchen – All rights reserved.",
+        "backToTop": {
+          "href": "#home",
+          "text": "Back to top"
+        }
+      }
+    }
+  },
+  "ro": {
+    "siteTitle": "Olga’s Kitchen",
+    "navLinks": [
+      {
+        "href": "#home",
+        "text": "Acasă"
+      },
+      {
+        "href": "#produkte",
+        "text": "Produse"
+      },
+      {
+        "href": "#bestellen",
+        "text": "Comandă"
+      },
+      {
+        "href": "#feedback",
+        "text": "Păreri"
+      },
+      {
+        "href": "#kontakt",
+        "text": "Contact"
+      }
+    ],
+    "sections": {
+      "home": {
+        "heading": "Bucătărie tradițională pentru ziua ta de zi cu zi – comandă ușor și bucură-te",
+        "text": "Bine ai venit la Olga’s Kitchen – adresa ta pentru mese congelate autentice, făcute manual după rețete de familie. Bucură-te de mâncăruri tradiționale est-europene, proaspete și sănătoase, pe care le poți pregăti acasă în câteva minute. Ideal pentru pasionații de gastronomie și pentru cei care lucrează în județul Sigmaringen și doresc să aducă un adevărat sentiment de acasă pe farfurie.",
+        "button": {
+          "href": "#produkte",
+          "text": "Descoperă acum"
+        }
+      },
+      "products": [
+        {
+          "id": "frischkaese",
+          "name": "Frischkäse-Taler (Brânzoaice)",
+          "images": [
+            {
+              "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung1.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung2.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
+              "overlayText": "Zubereitung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Taluri aurii, umplute cu brânză proaspătă și coapte până devin pufoase – perfecte pentru un mic dejun delicios sau o gustare între mese.",
+          "allergens": [
+            "Lactate",
+            "Gluten",
+            "Ou"
+          ],
+          "details": {
+            "packung": "12 taluri (aprox. 360 g produs congelat) – perfecte pentru mic dejun sau gustare.",
+            "zubereitung": [
+              "Coaceți în cuptorul preîncălzit la 180 °C, ventilat, timp de 25–30 de minute (întorcându-le la jumătatea timpului), până când talurile devin aurii."
+            ],
+            "serviervorschlaege": "Savurați cu iaurt, smântână și fructe de pădure proaspete.",
+            "naehrwerte": "156 kcal | 14 g proteine | 22 g carbohidrați | 4 g grăsimi"
+          }
+        },
+        {
+          "id": "piroggen",
+          "name": "Piroggen (Colțunași)",
+          "images": [
+            {
+              "src": "products/Piroggen/Serviervorschlag.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Colțunași românești (similar cu pelmeni rusești) umpluți cu brânză de vaci cremoasă – moi, sățioși și făcuți manual pentru un gust autentic de mâncare de casă.",
+          "allergens": [
+            "Gluten",
+            "Lactate",
+            "Ou"
+          ],
+          "details": {
+            "packung": "2 porții (500 g produs congelat) – ideale ca fel principal sau pentru împărțit.",
+            "zubereitung": [
+              "Puneți apă la fiert și adăugați sare.",
+              "Gătiți colțunașii timp de 5–7 minute, până când floats la suprafață.",
+              "Scurgeți și amestecați cu puțin unt."
+            ],
+            "serviervorschlaege": "Serviți cu smântână și ierburi proaspete.",
+            "naehrwerte": "225 kcal | 10,8 g proteine | 24,5 g carbohidrați | 9,4 g grăsimi"
+          }
+        },
+        {
+          "id": "pancakes",
+          "name": "Mini-Banana-Pancakes",
+          "images": [
+            {
+              "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Pancakes mini pufoase, cu aromă de banană, umplute cu ciocolată topită și proteină suplimentară – o delicatesă dulce și sățioasă pentru întreaga familie.",
+          "allergens": [
+            "Gluten",
+            "Lactate",
+            "Ou",
+            "Soia*"
+          ],
+          "details": {
+            "packung": "12 bucăți (aprox. 240 g produs congelat) – practice și gata de ronțăit.",
+            "zubereitung": [
+              "Prăjiți pancakes congelate (2–4 bucăți) în toaster la cea mai mare setare până devin aurii."
+            ],
+            "serviervorschlaege": "Garnisiți cu fructe de pădure proaspete, miere sau iaurt – sau savurați pur și simplu 😊.",
+            "naehrwerte": "225 kcal | 7,3 g proteine | 32,3 g carbohidrați | 7,2 g grăsimi"
+          }
+        }
+      ],
+      "order": {
+        "heading": "Cum funcționează comanda ta",
+        "steps": [
+          {
+            "icon": "1️⃣",
+            "title": "Selectați",
+            "text": "Alegeți felul de mâncare preferat și cantitatea dorită."
+          },
+          {
+            "icon": "2️⃣",
+            "title": "Confirmare",
+            "text": "Veți primi o confirmare a comenzii dvs. prin e-mail."
+          },
+          {
+            "icon": "3️⃣",
+            "title": "Ridicare",
+            "text": "Ridicare de la fața locului sau livrare la domiciliu."
+          }
+        ],
+        "button": {
+          "href": "https://order.olgas-kitchen.de",
+          "text": "Începeți comanda",
+          "external": true
+        }
+      },
+      "feedback": {
+        "heading": "Părerea ta contează!",
+        "text": "Suntem curioși despre opinia ta. Împărtășește-ne feedback-ul tău și ajută-ne să devenim și mai buni!",
+        "button": {
+          "href": "https://feedback.olgas-kitchen.de",
+          "text": "Trimite părerea",
+          "external": true
+        }
+      },
+      "contact": {
+        "heading": "Contact",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "button": {
+          "href": "https://wa.me/4917668291438",
+          "text": "Începeți chatul WhatsApp",
+          "ariaLabel": "Începeți chatul WhatsApp cu Olga’s Kitchen",
+          "external": true
+        }
+      },
+      "footer": {
+        "text": "© 2025 Olga’s Kitchen – Toate drepturile rezervate.",
+        "backToTop": {
+          "href": "#home",
+          "text": "Înapoi sus"
+        }
+      }
+    }
+  },
+  "ru": {
+    "siteTitle": "Olga’s Kitchen",
+    "navLinks": [
+      {
+        "href": "#home",
+        "text": "Главная"
+      },
+      {
+        "href": "#produkte",
+        "text": "Продукты"
+      },
+      {
+        "href": "#bestellen",
+        "text": "Заказать"
+      },
+      {
+        "href": "#feedback",
+        "text": "Отзывы"
+      },
+      {
+        "href": "#kontakt",
+        "text": "Контакт"
+      }
+    ],
+    "sections": {
+      "home": {
+        "heading": "Традиционная кухня для вашего повседневного рациона – просто закажите заранее и наслаждайтесь",
+        "text": "Добро пожаловать в Olga’s Kitchen – ваше место для аутентичных, ручной работы замороженных блюд, приготовленных по семейным рецептам. Наслаждайтесь традиционной восточноевропейской домашней кухней, свежей и здоровой, которую вы можете приготовить дома за считанные минуты.",
+        "button": {
+          "href": "#produkte",
+          "text": "Откройте для себя сейчас"
+        }
+      },
+      "products": [
+        {
+          "id": "frischkaese",
+          "name": "Frischkäse-Taler (Brânzoaice)",
+          "images": [
+            {
+              "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung1.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung2.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
+              "overlayText": "Zubereitung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Неотразимо ароматные, золотисто-коричневые лепешки из воздушного теста с творожным сыром – идеально подходят для вкусного завтрака или перекуса.",
+          "allergens": [
+            "Молоко",
+            "Глютен",
+            "Яйцо"
+          ],
+          "details": {
+            "packung": "12 лепешек (примерно 360 г замороженного продукта) – идеально для завтрака или перекуса.",
+            "zubereitung": [
+              "Выпекать в разогретой духовке при 180 °C с конвекцией 25–30 минут (перевернуть на полпути), пока лепешки не станут золотисто-коричневыми."
+            ],
+            "serviervorschlaege": "Наслаждайтесь с йогуртом, сметаной и свежими ягодами.",
+            "naehrwerte": "156 ккал | 14 г белка | 22 г углеводов | 4 г жира"
+          }
+        },
+        {
+          "id": "piroggen",
+          "name": "Piroggen (Colțunași)",
+          "images": [
+            {
+              "src": "products/Piroggen/Serviervorschlag.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Румынские пельмени (аналогичные русским пельменям) с кремовой начинкой из творога – мягкие, сытные и сделанные вручную для настоящего домашнего вкуса.",
+          "allergens": [
+            "Глютен",
+            "Молоко",
+            "Яйцо"
+          ],
+          "details": {
+            "packung": "2 порции (500 г замороженного продукта) – идеально в качестве основного блюда или для дележа.",
+            "zubereitung": [
+              "Довести воду до кипения и посолить.",
+              "Варить пельмени 5–7 минут, пока они не всплывут.",
+              "Слить воду и обжарить на небольшом количестве масла."
+            ],
+            "serviervorschlaege": "Подавайте со сметаной и свежей зеленью.",
+            "naehrwerte": "225 ккал | 10,8 г белка | 24,5 г углеводов | 9,4 г жира"
+          }
+        },
+        {
+          "id": "pancakes",
+          "name": "Mini-Banana-Pancakes",
+          "images": [
+            {
+              "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Пухлые мини-блинчики с банановым ароматом, начиненные растопленным шоколадом и дополнительным белком – сладкое и сытное угощение для детей и взрослых.",
+          "allergens": [
+            "Глютен",
+            "Молоко",
+            "Яйцо",
+            "Соевый белок*"
+          ],
+          "details": {
+            "packung": "12 штук (примерно 240 г замороженного продукта) – удобно брать с собой и перекусывать.",
+            "zubereitung": [
+              "Поджарить замороженные блинчики (2–4 штуки) в тостере на максимальной мощности до золотистого цвета."
+            ],
+            "serviervorschlaege": "Сверху положите свежие ягоды, мед или йогурт – или просто наслаждайтесь в чистом виде 😊.",
+            "naehrwerte": "225 ккал | 7,3 г белка | 32,3 г углеводов | 7,2 г жира"
+          }
+        }
+      ],
+      "order": {
+        "heading": "Как работает ваш заказ",
+        "steps": [
+          {
+            "icon": "1️⃣",
+            "title": "Выбор",
+            "text": "Выберите ваше любимое блюдо и желаемое количество."
+          },
+          {
+            "icon": "2️⃣",
+            "title": "Подтверждение",
+            "text": "Вы получите подтверждение вашего заказа по электронной почте."
+          },
+          {
+            "icon": "3️⃣",
+            "title": "Самовывоз",
+            "text": "Самовывоз на месте или доставка к вам домой."
+          }
+        ],
+        "button": {
+          "href": "https://order.olgas-kitchen.de",
+          "text": "Начать заказ",
+          "external": true
+        }
+      },
+      "feedback": {
+        "heading": "Ваше мнение имеет значение!",
+        "text": "Нам интересно ваше мнение. Поделитесь своим отзывом с нами и помогите нам стать еще лучше!",
+        "button": {
+          "href": "https://feedback.olgas-kitchen.de",
+          "text": "Оставить отзыв",
+          "external": true
+        }
+      },
+      "contact": {
+        "heading": "Контакт",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "button": {
+          "href": "https://wa.me/4917668291438",
+          "text": "Начать чат в WhatsApp",
+          "ariaLabel": "Начать чат в WhatsApp с Olga’s Kitchen",
+          "external": true
+        }
+      },
+      "footer": {
+        "text": "© 2025 Olga’s Kitchen – Все права защищены.",
+        "backToTop": {
+          "href": "#home",
+          "text": "Наверх"
+        }
       }
     }
   }
