@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#843B78">
   <meta name="description" content="Olga’s Kitchen – Handgemachte Fertiggerichte online bestellen: Rumänische Piroggen, Frischkäse-Taler, Mini-Banana-Pancakes. Jetzt vorbestellen & genießen!">
   <meta name="keywords" content="Olga’s Kitchen, Fertiggerichte bestellen, Rumänische Piroggen, Frischkäse Taler, Banana Pancakes, Online bestellen">
   <link rel="preload" href="logo.svg" as="image">
@@ -23,6 +24,8 @@
       60% { transform: translateX(20%) scale(1.2); opacity: 1; }
       100% { transform: translateX(0) scale(1); opacity: 1; }
     }
+    .hero { opacity: 0; visibility: hidden; }
+    .loaded .hero { opacity: 1; visibility: visible; transition: opacity 1s ease-in; }
   </style>
   <title>Olga’s Kitchen</title>
 </head>
@@ -55,6 +58,20 @@
 
   <footer><!-- Footer injected by main.js --></footer>
 
+  <!-- inline hero sizing to avoid flash -->
+  <script>
+    (function() {
+      function setHeroHeight() {
+        var header = document.querySelector('header');
+        var hero = document.querySelector('.hero');
+        if (!header || !hero) return;
+        hero.style.height = (window.innerHeight - header.getBoundingClientRect().height) + 'px';
+      }
+      window.addEventListener('resize', setHeroHeight);
+      setHeroHeight();
+      document.documentElement.classList.add('loaded');
+    })();
+  </script>
   <script type="module" src="src/main.js" defer></script>
 </body>
 </html>
