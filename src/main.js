@@ -52,6 +52,12 @@ const version = import.meta.env.VITE_APP_VERSION;
     if (productsHeading) {
       productsHeading.textContent = locale.sections.productsHeading || '✨ Unsere Spezialitäten';
     }
+
+    // Dynamically set the skip link text
+    const skipLink = document.querySelector('.skip-link');
+    if (skipLink) {
+      skipLink.textContent = locale.skipLinkText || 'Zum Inhalt springen';
+    }
   } catch (err) {
     console.error('Initialization error:', err);
   }

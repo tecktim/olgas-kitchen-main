@@ -216,7 +216,8 @@
       },
       "metaDescription": "Olga’s Kitchen – Handgemachte Fertiggerichte online bestellen: Rumänische Piroggen, Frischkäse-Taler, Mini-Banana-Pancakes. Jetzt vorbestellen & genießen!",
       "metaKeywords": "Olga’s Kitchen, Fertiggerichte bestellen, Rumänische Piroggen, Frischkäse Taler, Banana Pancakes, Online bestellen",
-      "productsHeading": "✨ Unsere Spezialitäten"
+      "productsHeading": "✨ Unsere Spezialitäten",
+      "skipLinkText": "Zum Inhalt springen"
     }
   },
   "en": {
@@ -414,7 +415,8 @@
       },
       "metaDescription": "Olga’s Kitchen – Order handcrafted frozen meals online: Romanian dumplings, fresh cheese patties, mini banana pancakes. Pre-order & enjoy!",
       "metaKeywords": "Olga’s Kitchen, Order frozen meals, Romanian dumplings, Fresh cheese patties, Banana pancakes, Online order",
-      "productsHeading": "✨ Our Specialties"
+      "productsHeading": "✨ Our Specialties",
+      "skipLinkText": "Skip to content"
     }
   },
   "ro": {
@@ -612,7 +614,8 @@
       },
       "metaDescription": "Olga’s Kitchen – Comandă mese congelate autentice online: Colțunași românești, taluri cu brânză proaspătă, mini-pancakes cu banane. Comandă acum & bucură-te!",
       "metaKeywords": "Olga’s Kitchen, Comandă mese congelate, Colțunași românești, Taluri cu brânză proaspătă, Mini-pancakes cu banane, Comandă online",
-      "productsHeading": "✨ Specialitățile noastre"
+      "productsHeading": "✨ Specialitățile noastre",
+      "skipLinkText": "Săriți la conținut"
     }
   },
   "ru": {
@@ -810,7 +813,8 @@
       },
       "metaDescription": "Olga’s Kitchen – Закажите аутентичные замороженные блюда онлайн: румынские пельмени, лепешки из творожного сыра, мини-блинчики с бананом. Закажите заранее и наслаждайтесь!",
       "metaKeywords": "Olga’s Kitchen, Заказать замороженные блюда, Румынские пельмени, Лепешки из творожного сыра, Мини-блинчики с бананом, Заказать онлайн",
-      "productsHeading": "✨ Наши Специалитеты"
+      "productsHeading": "✨ Наши Специалитеты",
+      "skipLinkText": "Перейти к содержанию"
     }
   }
 }
