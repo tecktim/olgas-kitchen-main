@@ -62,9 +62,6 @@ export function setupInteractions() {
           }, { once: true });
         }, 500);
       }
-      // Hide footer and close nav
-      const footer = document.querySelector('footer');
-      footer.setAttribute('hidden', '');
       nav.classList.remove('open');
       menuToggle.setAttribute('aria-expanded', 'false');
     });
