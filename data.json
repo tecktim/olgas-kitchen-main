@@ -256,23 +256,23 @@
           "images": [
             {
               "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
-              "overlayText": "Serviervorschlag"
+              "overlayText": "Serving suggestion"
             },
             {
               "src": "products/FrischkaeseTaler/Herstellung1.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Production"
             },
             {
               "src": "products/FrischkaeseTaler/Herstellung2.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Production"
             },
             {
               "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Preparation"
             },
             {
               "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Preparation"
             }
           ],
           "description": "Irresistibly fragrant, golden-brown baked patties made from airy fresh cheese dough – perfect for a delightful breakfast or a snack in between.",
@@ -296,15 +296,15 @@
           "images": [
             {
               "src": "products/Piroggen/Serviervorschlag.jpg",
-              "overlayText": "Serviervorschlag"
+              "overlayText": "Serving suggestion"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Production"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Preparation"
             }
           ],
           "description": "Romanian dumplings (similar to Russian Pelmeni) with creamy cottage cheese filling – soft, hearty, and handmade for authentic home-cooked flavor.",
@@ -330,15 +330,15 @@
           "images": [
             {
               "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
-              "overlayText": "Serviervorschlag"
+              "overlayText": "Serving suggestion"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Production"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Preparation"
             }
           ],
           "description": "Fluffy, banana-scented mini pancakes with melting chocolate chips and extra protein – a sweet, satisfying treat for young and old.",
@@ -451,23 +451,23 @@
           "images": [
             {
               "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
-              "overlayText": "Serviervorschlag"
+              "overlayText": "Sugestie de servire"
             },
             {
               "src": "products/FrischkaeseTaler/Herstellung1.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Producție"
             },
             {
               "src": "products/FrischkaeseTaler/Herstellung2.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Producție"
             },
             {
               "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Pregătire"
             },
             {
               "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Pregătire"
             }
           ],
           "description": "Taluri aurii, umplute cu brânză proaspătă și coapte până devin pufoase – perfecte pentru un mic dejun delicios sau o gustare între mese.",
@@ -491,15 +491,15 @@
           "images": [
             {
               "src": "products/Piroggen/Serviervorschlag.jpg",
-              "overlayText": "Serviervorschlag"
+              "overlayText": "Sugestie de servire"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Producție"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Pregătire"
             }
           ],
           "description": "Colțunași românești (similar cu pelmeni rusești) umpluți cu brânză de vaci cremoasă – moi, sățioși și făcuți manual pentru un gust autentic de mâncare de casă.",
@@ -525,15 +525,15 @@
           "images": [
             {
               "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
-              "overlayText": "Serviervorschlag"
+              "overlayText": "Sugestie de servire"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Producție"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Pregătire"
             }
           ],
           "description": "Pancakes mini pufoase, cu aromă de banană, umplute cu ciocolată topită și proteină suplimentară – o delicatesă dulce și sățioasă pentru întreaga familie.",
@@ -646,23 +646,23 @@
           "images": [
             {
               "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
-              "overlayText": "Serviervorschlag"
+              "overlayText": "Рекомендация по подаче"
             },
             {
               "src": "products/FrischkaeseTaler/Herstellung1.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Производство"
             },
             {
               "src": "products/FrischkaeseTaler/Herstellung2.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Производство"
             },
             {
               "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Подготовка"
             },
             {
               "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Подготовка"
             }
           ],
           "description": "Неотразимо ароматные, золотисто-коричневые лепешки из воздушного теста с творожным сыром – идеально подходят для вкусного завтрака или перекуса.",
@@ -686,15 +686,15 @@
           "images": [
             {
               "src": "products/Piroggen/Serviervorschlag.jpg",
-              "overlayText": "Serviervorschlag"
+              "overlayText": "Рекомендация по подаче"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Производство"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Подготовка"
             }
           ],
           "description": "Румынские пельмени (аналогичные русским пельменям) с кремовой начинкой из творога – мягкие, сытные и сделанные вручную для настоящего домашнего вкуса.",
@@ -720,15 +720,15 @@
           "images": [
             {
               "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
-              "overlayText": "Serviervorschlag"
+              "overlayText": "Рекомендация по подаче"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Herstellung"
+              "overlayText": "Производство"
             },
             {
               "src": "products/ComingSoon.jpg",
-              "overlayText": "Zubereitung"
+              "overlayText": "Подготовка"
             }
           ],
           "description": "Пухлые мини-блинчики с банановым ароматом, начиненные растопленным шоколадом и дополнительным белком – сладкое и сытное угощение для детей и взрослых.",
