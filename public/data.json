@@ -22,6 +22,28 @@
       "text": "Kontakt"
     }
   ],
+  "languages": [
+    {
+      "code": "de",
+      "icon": "localeIcons/german-flag-small.jpg",
+      "href": "?lang=de"
+    },
+    {
+      "code": "ro",
+      "icon": "localeIcons/romanian-flag-small.jpg",
+      "href": "?lang=ro"
+    },
+    {
+      "code": "en",
+      "icon": "localeIcons/english-flag-small.jpg",
+      "href": "?lang=en"
+    },
+    {
+      "code": "ru",
+      "icon": "localeIcons/russian-flag-small.jpg",
+      "href": "?lang=ru"
+    }
+  ],
   "sections": {
     "home": {
       "heading": "Traditionelle Küche für deinen Alltag – einfach vorbestellen & genießen",

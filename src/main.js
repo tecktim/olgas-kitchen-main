@@ -17,7 +17,8 @@ const version = import.meta.env.VITE_APP_VERSION;
   try {
     const data = await getData();
     renderHeader(data.siteTitle);
-    renderNav(data.navLinks);
+-    renderNav(data.navLinks);
++    renderNav(data.navLinks, data.languages);
     renderHome(data.sections.home);
     renderProducts(data.sections.products);
     renderOrder(data.sections.order);
