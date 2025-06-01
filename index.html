@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
+  <script>
+    (function(){
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get('lang') || 'de';
+      document.documentElement.lang = lang;
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">

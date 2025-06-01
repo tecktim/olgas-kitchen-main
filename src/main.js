@@ -16,15 +16,18 @@ const version = import.meta.env.VITE_APP_VERSION;
 (async function init() {
   try {
     const data = await getData();
-    renderHeader(data.siteTitle);
--    renderNav(data.navLinks);
-+    renderNav(data.navLinks, data.languages);
-    renderHome(data.sections.home);
-    renderProducts(data.sections.products);
-    renderOrder(data.sections.order);
-    renderFeedback(data.sections.feedback);
-    renderContact(data.sections.contact);
-    renderFooter(data.sections.footer);
+    // determine current language or default to 'de'
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang')?.toLowerCase() || 'de';
+    const locale = data[langParam] || data.de;
+    renderHeader(locale.siteTitle);
+    renderNav(locale.navLinks, data.languages);
+    renderHome(locale.sections.home);
+    renderProducts(locale.sections.products);
+    renderOrder(locale.sections.order);
+    renderFeedback(locale.sections.feedback);
+    renderContact(locale.sections.contact);
+    renderFooter(locale.sections.footer);
     setupInteractions();
   } catch (err) {
     console.error('Initialization error:', err);
@@ -34,7 +37,11 @@ const version = import.meta.env.VITE_APP_VERSION;
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const data = await getData();
-    const productImages = data.sections.products.flatMap(product =>
+    // select locale for preloading images
+    const urlParams2 = new URLSearchParams(window.location.search);
+    const langParam2 = urlParams2.get('lang')?.toLowerCase() || 'de';
+    const locale2 = data[langParam2] || data.de;
+    const productImages = locale2.sections.products.flatMap(product =>
       product.images.map(img => {
         const url = `${import.meta.env.BASE_URL}${img.src}`;
         return `${url}?v=${version}`;
