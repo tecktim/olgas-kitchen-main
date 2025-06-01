@@ -46,6 +46,12 @@ const version = import.meta.env.VITE_APP_VERSION;
     if (metaKeywords) {
       metaKeywords.setAttribute('content', locale.metaKeywords || '');
     }
+
+    // Dynamically set the heading for the products section
+    const productsHeading = document.querySelector('#produkte h2');
+    if (productsHeading) {
+      productsHeading.textContent = locale.sections.productsHeading || '✨ Unsere Spezialitäten';
+    }
   } catch (err) {
     console.error('Initialization error:', err);
   }
