@@ -68,6 +68,27 @@ export function renderProducts(products) {
         overlayEl.textContent = overlayText;
       }
 
+      // Automatisches Durchschalten
+      let autoSwitchInterval;
+      function startAutoSwitch() {
+        clearInterval(autoSwitchInterval);
+        autoSwitchInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          imgEl.style.opacity = '0';
+          overlayEl.style.opacity = '0';
+          setTimeout(() => {
+            updateImage();
+            imgEl.style.opacity = '1';
+            overlayEl.style.opacity = '1';
+          }, 200);
+        }, 4000);
+      }
+      function resetAutoSwitch() {
+        clearInterval(autoSwitchInterval);
+        setTimeout(startAutoSwitch, 8000); // Nach manueller Interaktion 8s Pause
+      }
+      startAutoSwitch();
+
       wrapper.addEventListener('click', e => {
         e.stopPropagation();
         const rect = wrapper.getBoundingClientRect();
@@ -84,6 +105,7 @@ export function renderProducts(products) {
           imgEl.style.opacity = '1';
           overlayEl.style.opacity = '1';
         }, 200);
+        resetAutoSwitch();
       });
 
       // Swipe-Handling (Touch)
@@ -108,6 +130,7 @@ export function renderProducts(products) {
             imgEl.style.opacity = '1';
             overlayEl.style.opacity = '1';
           }, 200);
+          resetAutoSwitch();
         }
         startX = null;
       });
@@ -133,6 +156,7 @@ export function renderProducts(products) {
             imgEl.style.opacity = '1';
             overlayEl.style.opacity = '1';
           }, 200);
+          resetAutoSwitch();
         }
         startX = null;
       });
