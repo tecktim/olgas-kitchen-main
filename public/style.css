@@ -117,7 +117,7 @@ header h1 .logo {
 nav {
   position: relative;
 }
-nav ul {
+nav > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -126,20 +126,20 @@ nav ul {
   align-items: stretch; /* changed from center to stretch */
   height: 48px; /* set a fixed height for vertical alignment */
 }
-nav ul, nav ul > li {
+nav > ul, nav > ul > li {
   align-items: center;
 }
-nav ul > li {
+nav > ul > li {
   display: flex;
   align-items: center;
   height: 100%; /* make li take full height of ul */
 }
-nav li a {
+nav > ul li a {
   padding: .5rem 1rem; border-radius: var(--radius);
   font-weight: 600; letter-spacing: .5px;
   transition: background var(--duration), transform var(--duration-short);
 }
-nav li a:hover, nav li a:focus {
+nav > ul li a:hover, nav > ul li a:focus {
   background: var(--color-accent); color: var(--color-btn-text);
   transform: translateY(-2px);
   outline: 3px solid var(--color-text);
@@ -476,7 +476,7 @@ header h1 {
   .menu-toggle {
     display: flex;
   }
-  nav ul {
+  nav > ul {
     display: flex;
     flex-direction: column;
     background: var(--color-bg-light);
@@ -485,14 +485,13 @@ header h1 {
     left: 0;
     width: 100%;
     box-shadow: var(--shadow);
-    padding: 0 var(--spacing);
-    gap: var(--spacingHalfed);
+    padding: 0 var(--spacing);    gap: var(--spacingHalfed);
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.4s ease, opacity 0.4s ease;
   }
-  nav.open ul {
+  nav.open > ul {
     max-height: 500px;
     opacity: 1;
     border: 2.5px solid var(--color-accent);
@@ -500,16 +499,18 @@ header h1 {
     border-radius: 0 0 var(--radius) var(--radius);
     box-shadow: 0 4px 16px rgba(132,59,120,0.08);
     margin-top: 8px;
+    padding-bottom: var(--spacingHalfed);
+    overflow: visible;
   }
-  nav ul li a {
+  nav > ul li a {
     opacity: 0;
     transition: opacity 0.2s ease;
   }
-  nav.open ul li a {
+  nav.open > ul li a {
     opacity: 1;
     transition-delay: 0.2s;
   }
-  nav ul li {
+  nav > ul li {
     margin: var(--spacingHalfed) 0;
   }
   nav li a {
@@ -529,7 +530,7 @@ header h1 {
     -ms-user-select: none;
     user-select: none;
   }
-  nav ul {
+  nav > ul {
     flex-direction: column;
     align-items: center; /* center all nav items horizontally */
     justify-content: flex-start;
@@ -538,7 +539,7 @@ header h1 {
     gap: var(--spacingHalfed);
     margin-top: 0;
   }
-  nav ul > li {
+  nav > ul > li {
     display: flex;
     align-items: center;
     justify-content: center; /* center li content horizontally */
@@ -593,7 +594,6 @@ header h1 {
   height: 40px; /* match nav height minus padding */
   margin: 0;
   background: transparent;
-  border: 2px solid var(--color-accent);
   border-radius: var(--radius);
   padding: 2px 6px;
   cursor: pointer;
@@ -619,21 +619,25 @@ header h1 {
   font-weight: bold;
   margin-left: 0.5em;
 }
+.lang-button:hover span, .lang-button:focus span {
+  color: var(--color-btn-text);
+}
+
 .lang-dropdown {
   position: absolute;
-  top: calc(100% + 0.5rem);
+  top: calc(65% + 0.5rem);
   right: 0;
   background: #fff;
   border: 2px solid var(--color-accent);
   border-radius: var(--radius);
   box-shadow: var(--shadow-hover);
-  padding: 0.5rem 0.25rem;
   min-width: 48px;
   z-index: 100;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   align-items: center;
+  padding: 0.25rem;
 }
 .lang-dropdown li {
   display: flex;
@@ -672,8 +676,11 @@ header h1 {
     justify-content: flex-end;
   }
   .lang-dropdown {
-    right: 0;
-    left: auto;
+    /* Position dropdown centered under the button */
+    top: calc(100% + 0.25rem);
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
     min-width: 44px;
   }
 }
