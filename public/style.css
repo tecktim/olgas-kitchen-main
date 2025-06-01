@@ -70,11 +70,10 @@ p { margin: 0 0 var(--spacing); }
 /* Header */
 header {
   background: var(--color-bg-light);
-  padding: calc(var(--spacing)*2) var(--spacing);
+  padding: calc(var(--spacing)) var(--spacingHalfed);
   text-align: center;
   box-shadow: var(--shadow);
   position: sticky; top: 0; z-index: 10;
-  position: relative; /* enable absolute positioning of children */
 }
 
 /* Logo im Header: links neben dem Titel mit Lade-Animation */
@@ -106,6 +105,14 @@ header h1 .logo {
   100% {
     transform: translateX(0) scale(1);
     opacity: 1;
+  }
+}
+
+/* Ensure logo is inline with title on non-mobile screens */
+@media (min-width: 601px) {
+  header h1 .logo {
+    position: static;
+    left: auto;
   }
 }
 
@@ -461,19 +468,19 @@ section.flash {
 }
 
 /* Header adjustments for logo, title, and burger layout */
-header {
-  position: relative; /* enable absolute positioning of children */
-}
+/* header {
+  position: relative; 
+} */
 /* Center the title text within header */
 header h1 {
   text-align: center;
   /* flex layout in inline style will center only title now that logo is absolute */
 }
-/* Logo absolute at left with half spacing margin */
-header .logo {
+/* Remove absolute positioning of the logo on non-mobile screens to keep it inline with the title */
+/* header .logo {
   position: absolute;
   left: var(--spacingHalfed);
-}
+} */
 /* Burger menu icon absolute at right with half spacing */
 .menu-toggle {
   position: absolute;
@@ -486,7 +493,7 @@ header .logo {
 @media (max-width:600px) {
   /* Header-Padding reduzieren */
   header {
-    padding: var(--spacing) var(--spacing);
+    padding: var(--spacingHalfed) var(--spacingHalfed);
   }
   /* Hamburger anzeigen */
   .menu-toggle {
