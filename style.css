@@ -74,6 +74,7 @@ header {
   text-align: center;
   box-shadow: var(--shadow);
   position: sticky; top: 0; z-index: 10;
+  position: relative; /* enable absolute positioning of children */
 }
 
 /* Logo im Header: links neben dem Titel mit Lade-Animation */
@@ -81,6 +82,7 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 header h1 .logo {
   width: auto;
@@ -89,6 +91,8 @@ header h1 .logo {
   opacity: 0;
   animation: logoSlideIn 1s ease-out forwards;
   will-change: transform, opacity; /* Hint to browser for smoother animations */
+  position: absolute;
+  left: var(--spacingHalfed);
 }
 @keyframes logoSlideIn {
   0% {
@@ -134,11 +138,17 @@ nav li a:hover, nav li a:focus {
   flex-direction: column; justify-content: space-around;
   align-items: center; z-index: 11;
   padding: 0.5rem;
+  right: var(--spacingHalfed);
+  margin-top: 0;
 }
 .menu-toggle span {
   display: block; width: 24px; height: 3px;
   background: var(--color-text); border-radius: 2px;
   transition: transform var(--duration) ease, opacity var(--duration) ease;
+}
+
+.menu-toggle:hover span:nth-child(1) {
+  transform: translateY(0);
 }
 
 /* Buttons */
@@ -448,6 +458,28 @@ section.flash {
     width: 100%;
     max-width: 300px;
   }
+}
+
+/* Header adjustments for logo, title, and burger layout */
+header {
+  position: relative; /* enable absolute positioning of children */
+}
+/* Center the title text within header */
+header h1 {
+  text-align: center;
+  /* flex layout in inline style will center only title now that logo is absolute */
+}
+/* Logo absolute at left with half spacing margin */
+header .logo {
+  position: absolute;
+  left: var(--spacingHalfed);
+}
+/* Burger menu icon absolute at right with half spacing */
+.menu-toggle {
+  position: absolute;
+  right: var(--spacingHalfed);
+  top: 30%;
+  margin-top: 0;
 }
 
 /* Responsive Styles */
