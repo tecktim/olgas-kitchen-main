@@ -1,15 +1,16 @@
 {
   "name": "olgas-kitchen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handgemachte Fertiggerichte online bestellen",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "build": "cross-env VITE_APP_VERSION=$npm_package_version vite build",
+    "preview": "npm run build && vite preview",
     "deploy": "gh-pages -d dist",
     "serve": "npm run build && npm run deploy"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "gh-pages": "^6.3.0",
     "vite": "^4.0.0"
   }
