@@ -71,6 +71,7 @@ header {
   padding: calc(var(--spacing)) var(--spacingHalfed);
   text-align: center;
   box-shadow: var(--shadow);
+  border-bottom: 2.5px solid var(--color-accent);
   position: sticky; top: 0; z-index: 10;
 }
 header h1 {
@@ -480,6 +481,11 @@ header h1 {
   nav.open ul {
     max-height: 500px;
     opacity: 1;
+    border: 2.5px solid var(--color-accent);
+    border-top: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+    box-shadow: 0 4px 16px rgba(132,59,120,0.08);
+    margin-top: 8px;
   }
   nav ul li a {
     opacity: 0;
