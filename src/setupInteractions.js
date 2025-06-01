@@ -1,6 +1,8 @@
 // src/setupInteractions.js
 // Contains all DOM interaction setup
 export function setupInteractions() {
+
+  
   // Burger-Menu Toggle
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('nav');
@@ -78,4 +80,16 @@ export function setupInteractions() {
       if (navLink) navLink.click();
     });
   }
+
+  // Hero dynamic height adjustment
+  function setHeroHeight() {
+    const header = document.querySelector('header');
+    const hero   = document.querySelector('.hero');
+    if (!header || !hero) return;
+    const headerHeight = header.getBoundingClientRect().height;
+    hero.style.height  = `${window.innerHeight - headerHeight}px`;
+  }
+  window.addEventListener('load',   setHeroHeight);
+  window.addEventListener('resize', setHeroHeight);
+  setHeroHeight();
 }
