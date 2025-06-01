@@ -29,6 +29,23 @@ const version = import.meta.env.VITE_APP_VERSION;
     renderContact(locale.sections.contact);
     renderFooter(locale.sections.footer);
     setupInteractions();
+
+    // Dynamically set the page title based on the selected language
+    const titleElement = document.querySelector('title');
+    if (titleElement) {
+      titleElement.textContent = locale.siteTitle;
+    }
+
+    // Dynamically set meta description and keywords
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', locale.metaDescription || '');
+    }
+
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords) {
+      metaKeywords.setAttribute('content', locale.metaKeywords || '');
+    }
   } catch (err) {
     console.error('Initialization error:', err);
   }
