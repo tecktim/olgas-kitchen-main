@@ -71,15 +71,23 @@
         "name": "Frischkäse-Taler (Brânzoaice)",
         "images": [
           {
-            "src": "products/FrischkaeseTaler/Serviervorschlag.jpg",
+            "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
             "overlayText": "Serviervorschlag"
           },
           {
-            "src": "products/ComingSoon.jpg",
+            "src": "products/FrischkaeseTaler/Herstellung1.jpg",
             "overlayText": "Herstellung"
           },
           {
-            "src": "products/ComingSoon.jpg",
+            "src": "products/FrischkaeseTaler/Herstellung2.jpg",
+            "overlayText": "Herstellung"
+          },
+          {
+            "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
+            "overlayText": "Zubereitung"
+          },
+          {
+            "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
             "overlayText": "Zubereitung"
           }
         ],
