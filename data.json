@@ -33,40 +33,6 @@
     },
     "products": [
       {
-        "id": "piroggen",
-        "name": "Piroggen (Colțunași)",
-        "images": [
-          {
-            "src": "products/Piroggen/Serviervorschlag.jpg",
-            "overlayText": "Serviervorschlag"
-          },
-          {
-            "src": "products/ComingSoon.jpg",
-            "overlayText": "Herstellung"
-          },
-          {
-            "src": "products/ComingSoon.jpg",
-            "overlayText": "Zubereitung"
-          }
-        ],
-        "description": "Rumänische Teigtaschen (ähnlich den russischen Pelmeni) mit cremiger Hüttenkäse-Füllung – weich, herzhaft und von Hand gemacht für echten Hausmannskost-Genuss.",
-        "allergens": [
-          "Gluten",
-          "Milch",
-          "Ei"
-        ],
-        "details": {
-          "packung": "2 Portionen (500 g gefrorenes Produkt) – ideal als Hauptgericht oder zum Teilen.",
-          "zubereitung": [
-            "Wasser zum Kochen bringen und salzen.",
-            "Piroggen 5–7 Minuten garen, bis sie oben schwimmen.",
-            "Abgießen und mit etwas Butter schwenken."
-          ],
-          "serviervorschlaege": "Mit Schmand und frischen Kräutern servieren.",
-          "naehrwerte": "225 kcal | 10,8 g Eiweiß | 24,5 g KH | 9,4 g Fett"
-        }
-      },
-      {
         "id": "frischkaese",
         "name": "Frischkäse-Taler (Brânzoaice)",
         "images": [
@@ -104,6 +70,40 @@
           ],
           "serviervorschlaege": "Mit Joghurt, Schmand und frischen Beeren genießen.",
           "naehrwerte": "156 kcal | 14 g Eiweiß | 22 g KH | 4 g Fett"
+        }
+      },
+      {
+        "id": "piroggen",
+        "name": "Piroggen (Colțunași)",
+        "images": [
+          {
+            "src": "products/Piroggen/Serviervorschlag.jpg",
+            "overlayText": "Serviervorschlag"
+          },
+          {
+            "src": "products/ComingSoon.jpg",
+            "overlayText": "Herstellung"
+          },
+          {
+            "src": "products/ComingSoon.jpg",
+            "overlayText": "Zubereitung"
+          }
+        ],
+        "description": "Rumänische Teigtaschen (ähnlich den russischen Pelmeni) mit cremiger Hüttenkäse-Füllung – weich, herzhaft und von Hand gemacht für echten Hausmannskost-Genuss.",
+        "allergens": [
+          "Gluten",
+          "Milch",
+          "Ei"
+        ],
+        "details": {
+          "packung": "2 Portionen (500 g gefrorenes Produkt) – ideal als Hauptgericht oder zum Teilen.",
+          "zubereitung": [
+            "Wasser zum Kochen bringen und salzen.",
+            "Piroggen 5–7 Minuten garen, bis sie oben schwimmen.",
+            "Abgießen und mit etwas Butter schwenken."
+          ],
+          "serviervorschlaege": "Mit Schmand und frischen Kräutern servieren.",
+          "naehrwerte": "225 kcal | 10,8 g Eiweiß | 24,5 g KH | 9,4 g Fett"
         }
       },
       {
