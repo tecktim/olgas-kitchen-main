@@ -89,7 +89,5 @@ export function setupInteractions() {
     const headerHeight = header.getBoundingClientRect().height;
     hero.style.height  = `${window.innerHeight - headerHeight}px`;
   }
-  window.addEventListener('load',   setHeroHeight);
-  window.addEventListener('resize', setHeroHeight);
   setHeroHeight();
 }
