@@ -134,11 +134,11 @@
           "name": "Mini-Banana-Pancakes",
           "images": [
             {
-              "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
+              "src": "products/MiniBananaPancakes/Serviervorschlag1.jpg",
               "overlayText": "Serviervorschlag"
             },
             {
-              "src": "products/ComingSoon.jpg",
+              "src": "products/MiniBananaPancakes/Herstellung1.jpg",
               "overlayText": "Herstellung"
             },
             {
@@ -333,11 +333,11 @@
           "name": "Mini-Banana-Pancakes",
           "images": [
             {
-              "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
+              "src": "products/MiniBananaPancakes/Serviervorschlag1.jpg",
               "overlayText": "Serving suggestion"
             },
             {
-              "src": "products/ComingSoon.jpg",
+              "src": "products/MiniBananaPancakes/Herstellung1.jpg",
               "overlayText": "Production"
             },
             {
@@ -532,11 +532,11 @@
           "name": "Mini-Banana-Pancakes",
           "images": [
             {
-              "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
+              "src": "products/MiniBananaPancakes/Serviervorschlag1.jpg",
               "overlayText": "Sugestie de servire"
             },
             {
-              "src": "products/ComingSoon.jpg",
+              "src": "products/MiniBananaPancakes/Herstellung1.jpg",
               "overlayText": "Producție"
             },
             {
@@ -731,11 +731,11 @@
           "name": "Mini-Banana-Pancakes",
           "images": [
             {
-              "src": "products/MiniBananaPancakes/Serviervorschlag.jpg",
+              "src": "products/MiniBananaPancakes/Serviervorschlag1.jpg",
               "overlayText": "Рекомендация по подаче"
             },
             {
-              "src": "products/ComingSoon.jpg",
+              "src": "products/MiniBananaPancakes/Herstellung1.jpg",
               "overlayText": "Производство"
             },
             {
