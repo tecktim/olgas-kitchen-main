@@ -134,7 +134,7 @@
           "name": "Mini-Banana-Pancakes",
           "images": [
             {
-              "src": "products/ComingSoon.jpg",
+              "src": "products/MiniBananaPancakes/Serviervorschlag1.jpg",
               "overlayText": "Serviervorschlag"
             },
             {
@@ -333,7 +333,7 @@
           "name": "Mini-Banana-Pancakes",
           "images": [
             {
-              "src": "products/ComingSoon.jpg",
+              "src": "products/MiniBananaPancakes/Serviervorschlag1.jpg",
               "overlayText": "Serving suggestion"
             },
             {
@@ -532,7 +532,7 @@
           "name": "Mini-Banana-Pancakes",
           "images": [
             {
-              "src": "products/ComingSoon.jpg",
+              "src": "products/MiniBananaPancakes/Serviervorschlag1.jpg",
               "overlayText": "Sugestie de servire"
             },
             {
@@ -731,7 +731,7 @@
           "name": "Mini-Banana-Pancakes",
           "images": [
             {
-              "src": "products/ComingSoon.jpg",
+              "src": "products/MiniBananaPancakes/Serviervorschlag1.jpg",
               "overlayText": "Рекомендация по подаче"
             },
             {
