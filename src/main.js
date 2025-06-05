@@ -47,6 +47,14 @@ const version = import.meta.env.VITE_APP_VERSION;
       metaKeywords.setAttribute('content', locale.metaKeywords || '');
     }
 
+    // Inject structured data for LocalBusiness if available
+    if (locale.structuredData) {
+      const scriptTag = document.createElement('script');
+      scriptTag.type = 'application/ld+json';
+      scriptTag.textContent = JSON.stringify(locale.structuredData);
+      document.head.appendChild(scriptTag);
+    }
+
     // Dynamically set the heading for the products section
     const productsHeading = document.querySelector('#produkte h2');
     if (productsHeading) {
