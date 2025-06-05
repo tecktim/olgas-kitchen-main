@@ -47,7 +47,7 @@
     ],
     "sections": {
       "home": {
-        "heading": "Traditionelle Küche für deinen Alltag – einfach vorbestellen & genießen",
+        "heading": "Handgemachte Tiefkühlgerichte aus Sigmaringen – einfach vorbestellen & genießen",
         "text": "Willkommen bei Olga’s Kitchen – deiner Adresse für authentische, handgemachte Tiefkühlgerichte mit Liebe zum Detail. Genieße traditionelle osteuropäische Hausmannskost, frisch und gesund, die du in wenigen Minuten zu Hause zubereiten kannst. Ideal für Foodies und Berufstätige im Landkreis Sigmaringen, die sich ein Stück Heimat und echten Genuss auf den Teller holen wollen.",
         "button": {
           "href": "#produkte",
@@ -199,7 +199,7 @@
       },
       "contact": {
         "heading": "Kontakt",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nTelefon: +49 176 68291438",
         "button": {
           "href": "https://wa.me/4917668291438",
           "text": "WhatsApp Chat starten",
@@ -218,6 +218,25 @@
       "metaKeywords": "Olga’s Kitchen, Fertiggerichte bestellen, Rumänische Piroggen, Frischkäse Taler, Banana Pancakes, Online bestellen",
       "productsHeading": "✨ Unsere Spezialitäten",
       "skipLinkText": "Zum Inhalt springen"
+    },
+    "metaDescription": "Handgemachte Tiefkühlgerichte aus Herbertingen – Lieferung in Sigmaringen und Umgebung. Rumänische Piroggen, Frischkäse-Taler, Mini-Banana-Pancakes online vorbestellen und genießen!",
+    "metaKeywords": "Olga’s Kitchen, handgemachte Tiefkühlgerichte Sigmaringen, Fertiggerichte bestellen, Rumänische Piroggen, Frischkäse Taler, Banana Pancakes, Herbertingen, Lieferung Sigmaringen",
+    "productsHeading": "✨ Unsere Spezialitäten aus Sigmaringen",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Olga’s Kitchen",
+      "image": "https://olgas-kitchen.de/logo.png",
+      "url": "https://olgas-kitchen.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heßlingerstraße 2",
+        "addressLocality": "Herbertingen",
+        "postalCode": "88518",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49 176 68291438",
+      "areaServed": "Sigmaringen"
     }
   },
   "en": {
@@ -246,7 +265,7 @@
     ],
     "sections": {
       "home": {
-        "heading": "Traditional cuisine for your everyday – pre-order & enjoy",
+        "heading": "Handmade frozen meals from Sigmaringen – pre-order & enjoy",
         "text": "Welcome to Olga’s Kitchen – your place for authentic, handcrafted frozen meals made with passion and care. Enjoy traditional Eastern European comfort food, fresh and healthy, ready in minutes at home. Perfect for food lovers and busy people in the Sigmaringen area who want to bring a taste of home and real enjoyment to their plate.",
         "button": {
           "href": "#produkte",
@@ -398,7 +417,7 @@
       },
       "contact": {
         "heading": "Contact",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nPhone: +49 176 68291438",
         "button": {
           "href": "https://wa.me/4917668291438",
           "text": "Start WhatsApp chat",
@@ -417,6 +436,25 @@
       "metaKeywords": "Olga’s Kitchen, Order frozen meals, Romanian dumplings, Fresh cheese patties, Banana pancakes, Online order",
       "productsHeading": "✨ Our Specialties",
       "skipLinkText": "Skip to content"
+    },
+    "metaDescription": "Handmade frozen meals from Herbertingen with delivery in the Sigmaringen region. Order Romanian dumplings, fresh cheese patties and mini banana pancakes online!",
+    "metaKeywords": "Olga’s Kitchen, handmade frozen meals Sigmaringen, order ready meals, Romanian dumplings, fresh cheese patties, banana pancakes, Herbertingen delivery",
+    "productsHeading": "✨ Our Specialties from Sigmaringen",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Olga’s Kitchen",
+      "image": "https://olgas-kitchen.de/logo.png",
+      "url": "https://olgas-kitchen.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heßlingerstraße 2",
+        "addressLocality": "Herbertingen",
+        "postalCode": "88518",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49 176 68291438",
+      "areaServed": "Sigmaringen"
     }
   },
   "ro": {
@@ -445,7 +483,7 @@
     ],
     "sections": {
       "home": {
-        "heading": "Bucătărie tradițională pentru ziua ta de zi cu zi – comandă ușor și bucură-te",
+        "heading": "Mâncăruri congelate de casă din Sigmaringen – comandă și savurează",
         "text": "Bine ai venit la Olga’s Kitchen – locul tău pentru preparate congelate autentice, făcute manual cu grijă și pasiune. Bucură-te de mâncăruri tradiționale est-europene, proaspete și sănătoase, gata în doar câteva minute acasă. Ideal pentru gurmanzi și persoane ocupate din județul Sigmaringen care vor să aducă pe farfurie gustul autentic și bucuria mesei de acasă.",
         "button": {
           "href": "#produkte",
@@ -597,7 +635,7 @@
       },
       "contact": {
         "heading": "Contact",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nTelefon: +49 176 68291438",
         "button": {
           "href": "https://wa.me/4917668291438",
           "text": "Începeți chatul WhatsApp",
@@ -616,6 +654,25 @@
       "metaKeywords": "Olga’s Kitchen, Comandă mese congelate, Colțunași românești, Taluri cu brânză proaspătă, Mini-pancakes cu banane, Comandă online",
       "productsHeading": "✨ Specialitățile noastre",
       "skipLinkText": "Săriți la conținut"
+    },
+    "metaDescription": "Preparate congelate de casă din Herbertingen cu livrare în Sigmaringen și împrejurimi. Comandă Colțunași, talere cu brânză și mini-pancakes cu banane!",
+    "metaKeywords": "Olga’s Kitchen, mâncăruri congelate Sigmaringen, cumpără preparate gata, Colțunași românești, talere cu brânză, mini-pancakes, Herbertingen, livrare Sigmaringen",
+    "productsHeading": "✨ Specialitățile noastre din Sigmaringen",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Olga’s Kitchen",
+      "image": "https://olgas-kitchen.de/logo.png",
+      "url": "https://olgas-kitchen.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heßlingerstraße 2",
+        "addressLocality": "Herbertingen",
+        "postalCode": "88518",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49 176 68291438",
+      "areaServed": "Sigmaringen"
     }
   },
   "ru": {
@@ -644,7 +701,7 @@
     ],
     "sections": {
       "home": {
-        "heading": "Традиционная кухня для вашего повседневного рациона – просто закажите заранее и наслаждайтесь",
+        "heading": "Домашние замороженные блюда из Зигмарингена – закажите заранее и наслаждайтесь",
         "text": "Добро пожаловать в Olga’s Kitchen – здесь вас ждут аутентичные, вручную приготовленные замороженные блюда, созданные с любовью и заботой. Наслаждайтесь традиционной восточноевропейской домашней кухней: свежей, полезной и готовой за считанные минуты. Идеально для гурманов и занятых людей в районе Зигмаринген, которые хотят почувствовать уют и настоящий вкус дома.",
         "button": {
           "href": "#produkte",
@@ -796,7 +853,7 @@
       },
       "contact": {
         "heading": "Контакт",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nТелефон: +49 176 68291438",
         "button": {
           "href": "https://wa.me/4917668291438",
           "text": "Начать чат в WhatsApp",
@@ -815,6 +872,25 @@
       "metaKeywords": "Olga’s Kitchen, Заказать замороженные блюда, Румынские пельмени, Лепешки из творожного сыра, Мини-блинчики с бананом, Заказать онлайн",
       "productsHeading": "✨ Наши Специалитеты",
       "skipLinkText": "Перейти к содержанию"
+    },
+    "metaDescription": "Домашние замороженные блюда из Гербертингена с доставкой в Зигмаринген и окрестности. Закажите румынские пельмени, творожные лепешки и мини-блинчики с бананом онлайн!",
+    "metaKeywords": "Olga’s Kitchen, замороженные блюда Зигмаринген, купить готовую еду, румынские пельмени, творожные лепешки, мини-блинчики, Гербертинген, доставка Зигмаринген",
+    "productsHeading": "✨ Наши специальности из Зигмарингена",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Olga’s Kitchen",
+      "image": "https://olgas-kitchen.de/logo.png",
+      "url": "https://olgas-kitchen.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heßlingerstraße 2",
+        "addressLocality": "Herbertingen",
+        "postalCode": "88518",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49 176 68291438",
+      "areaServed": "Sigmaringen"
     }
   }
 }
