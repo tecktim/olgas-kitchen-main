@@ -47,7 +47,7 @@
     ],
     "sections": {
       "home": {
-        "heading": "Traditionelle Küche für deinen Alltag – einfach vorbestellen & genießen",
+        "heading": "Handgemachte Tiefkühlgerichte aus Sigmaringen – einfach vorbestellen & genießen",
         "text": "Willkommen bei Olga’s Kitchen – deiner Adresse für authentische, handgemachte Tiefkühlgerichte mit Liebe zum Detail. Genieße traditionelle osteuropäische Hausmannskost, frisch und gesund, die du in wenigen Minuten zu Hause zubereiten kannst. Ideal für Foodies und Berufstätige im Landkreis Sigmaringen, die sich ein Stück Heimat und echten Genuss auf den Teller holen wollen.",
         "button": {
           "href": "#produkte",
@@ -89,7 +89,8 @@
           "details": {
             "packung": "12 Taler (ca. 360 g gefrorenes Produkt) – perfekt für Frühstück oder Snack.",
             "zubereitung": [
-              "Im vorgeheizten Ofen bei 180 °C Umluft 25–30 Minuten backen (zwischendurch wenden), bis die Taler goldbraun sind."
+              "Das Produkt immer gefroren zubereiten, nicht vorher auftauen.",
+              "Im vorgeheizten Ofen bei 190 °C Umluft 25–30 Minuten backen (zwischendurch wenden), bis die Taler goldbraun sind."
             ],
             "serviervorschlaege": "Mit Joghurt, Schmand und frischen Beeren genießen.",
             "naehrwerte": "156 kcal | 14 g Eiweiß | 22 g KH | 4 g Fett"
@@ -121,6 +122,7 @@
           "details": {
             "packung": "2 Portionen (500 g gefrorenes Produkt) – ideal als Hauptgericht oder zum Teilen.",
             "zubereitung": [
+              "Das Produkt immer gefroren zubereiten, nicht vorher auftauen.",
               "Wasser zum Kochen bringen und salzen.",
               "Piroggen 5–7 Minuten garen, bis sie oben schwimmen.",
               "Abgießen und mit etwas Butter schwenken."
@@ -156,6 +158,7 @@
           "details": {
             "packung": "12 Stück (ca. 240 g gefrorenes Produkt) – handlich & snackfertig.",
             "zubereitung": [
+              "Das Produkt immer gefroren zubereiten, nicht vorher auftauen.",
               "Gefrorene Pancakes (2–4 Stück) im Toaster auf höchster Stufe toasten, bis sie goldbraun sind."
             ],
             "serviervorschlaege": "Mit frischen Beeren, Honig oder Joghurt toppen – oder einfach pur snacken 😊.",
@@ -199,7 +202,7 @@
       },
       "contact": {
         "heading": "Kontakt",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nTelefon: +49 176 68291438",
         "button": {
           "href": "https://wa.me/4917668291438",
           "text": "WhatsApp Chat starten",
@@ -218,6 +221,25 @@
       "metaKeywords": "Olga’s Kitchen, Fertiggerichte bestellen, Rumänische Piroggen, Frischkäse Taler, Banana Pancakes, Online bestellen",
       "productsHeading": "✨ Unsere Spezialitäten",
       "skipLinkText": "Zum Inhalt springen"
+    },
+    "metaDescription": "Handgemachte Tiefkühlgerichte aus Herbertingen – Lieferung in Sigmaringen und Umgebung. Rumänische Piroggen, Frischkäse-Taler, Mini-Banana-Pancakes online vorbestellen und genießen!",
+    "metaKeywords": "Olga’s Kitchen, handgemachte Tiefkühlgerichte Sigmaringen, Fertiggerichte bestellen, Rumänische Piroggen, Frischkäse Taler, Banana Pancakes, Herbertingen, Lieferung Sigmaringen",
+    "productsHeading": "✨ Unsere Spezialitäten aus Sigmaringen",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Olga’s Kitchen",
+      "image": "https://olgas-kitchen.de/logo.png",
+      "url": "https://olgas-kitchen.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heßlingerstraße 2",
+        "addressLocality": "Herbertingen",
+        "postalCode": "88518",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49 176 68291438",
+      "areaServed": "Sigmaringen"
     }
   },
   "en": {
@@ -246,7 +268,7 @@
     ],
     "sections": {
       "home": {
-        "heading": "Traditional cuisine for your everyday – pre-order & enjoy",
+        "heading": "Handmade frozen meals from Sigmaringen – pre-order & enjoy",
         "text": "Welcome to Olga’s Kitchen – your place for authentic, handcrafted frozen meals made with passion and care. Enjoy traditional Eastern European comfort food, fresh and healthy, ready in minutes at home. Perfect for food lovers and busy people in the Sigmaringen area who want to bring a taste of home and real enjoyment to their plate.",
         "button": {
           "href": "#produkte",
@@ -288,7 +310,8 @@
           "details": {
             "packung": "12 patties (approx. 360 g frozen product) – perfect for breakfast or a snack.",
             "zubereitung": [
-              "Bake in a preheated oven at 180 °C circulating air for 25–30 minutes (turning halfway), until the patties are golden brown."
+              "Always cook from frozen, do not thaw before preparation.",
+              "Bake in a preheated oven at 190 °C circulating air for 25–30 minutes (turning halfway), until the patties are golden brown."
             ],
             "serviervorschlaege": "Enjoy with yogurt, sour cream, and fresh berries.",
             "naehrwerte": "156 kcal | 14 g protein | 22 g carbs | 4 g fat"
@@ -320,6 +343,7 @@
           "details": {
             "packung": "2 servings (500 g frozen product) – ideal as a main dish or for sharing.",
             "zubereitung": [
+              "Always cook from frozen, do not thaw before preparation.",
               "Bring water to a boil and add salt.",
               "Cook dumplings for 5–7 minutes until they float to the top.",
               "Drain and toss with a little butter."
@@ -355,6 +379,7 @@
           "details": {
             "packung": "12 pieces (approx. 240 g frozen product) – handy & ready-to-snack.",
             "zubereitung": [
+              "Always cook from frozen, do not thaw before preparation.",
               "Toast frozen pancakes (2–4 pieces) in a toaster on the highest setting until golden brown."
             ],
             "serviervorschlaege": "Top with fresh berries, honey, or yogurt – or enjoy plain 😊.",
@@ -398,7 +423,7 @@
       },
       "contact": {
         "heading": "Contact",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nPhone: +49 176 68291438",
         "button": {
           "href": "https://wa.me/4917668291438",
           "text": "Start WhatsApp chat",
@@ -417,6 +442,25 @@
       "metaKeywords": "Olga’s Kitchen, Order frozen meals, Romanian dumplings, Fresh cheese patties, Banana pancakes, Online order",
       "productsHeading": "✨ Our Specialties",
       "skipLinkText": "Skip to content"
+    },
+    "metaDescription": "Handmade frozen meals from Herbertingen with delivery in the Sigmaringen region. Order Romanian dumplings, fresh cheese patties and mini banana pancakes online!",
+    "metaKeywords": "Olga’s Kitchen, handmade frozen meals Sigmaringen, order ready meals, Romanian dumplings, fresh cheese patties, banana pancakes, Herbertingen delivery",
+    "productsHeading": "✨ Our Specialties from Sigmaringen",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Olga’s Kitchen",
+      "image": "https://olgas-kitchen.de/logo.png",
+      "url": "https://olgas-kitchen.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heßlingerstraße 2",
+        "addressLocality": "Herbertingen",
+        "postalCode": "88518",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49 176 68291438",
+      "areaServed": "Sigmaringen"
     }
   },
   "ro": {
@@ -445,7 +489,7 @@
     ],
     "sections": {
       "home": {
-        "heading": "Bucătărie tradițională pentru ziua ta de zi cu zi – comandă ușor și bucură-te",
+        "heading": "Mâncăruri congelate de casă din Sigmaringen – comandă și savurează",
         "text": "Bine ai venit la Olga’s Kitchen – locul tău pentru preparate congelate autentice, făcute manual cu grijă și pasiune. Bucură-te de mâncăruri tradiționale est-europene, proaspete și sănătoase, gata în doar câteva minute acasă. Ideal pentru gurmanzi și persoane ocupate din județul Sigmaringen care vor să aducă pe farfurie gustul autentic și bucuria mesei de acasă.",
         "button": {
           "href": "#produkte",
@@ -487,7 +531,8 @@
           "details": {
             "packung": "12 taluri (aprox. 360 g produs congelat) – perfecte pentru mic dejun sau gustare.",
             "zubereitung": [
-              "Coaceți în cuptorul preîncălzit la 180 °C, ventilat, timp de 25–30 de minute (întorcându-le la jumătatea timpului), până când talurile devin aurii."
+              "Preparați întotdeauna produsul congelat, fără a-l decongela înainte.",
+              "Coaceți în cuptorul preîncălzit la 190 °C, ventilat, timp de 25–30 de minute (întorcându-le la jumătatea timpului), până când talurile devin aurii."
             ],
             "serviervorschlaege": "Savurați cu iaurt, smântână și fructe de pădure proaspete.",
             "naehrwerte": "156 kcal | 14 g proteine | 22 g carbohidrați | 4 g grăsimi"
@@ -519,6 +564,7 @@
           "details": {
             "packung": "2 porții (500 g produs congelat) – ideale ca fel principal sau pentru împărțit.",
             "zubereitung": [
+              "Preparați întotdeauna produsul congelat, fără a-l decongela înainte.",
               "Puneți apă la fiert și adăugați sare.",
               "Gătiți colțunașii timp de 5–7 minute, până când floats la suprafață.",
               "Scurgeți și amestecați cu puțin unt."
@@ -554,6 +600,7 @@
           "details": {
             "packung": "12 bucăți (aprox. 240 g produs congelat) – practice și gata de ronțăit.",
             "zubereitung": [
+              "Preparați întotdeauna produsul congelat, fără a-l decongela înainte.",
               "Prăjiți pancakes congelate (2–4 bucăți) în toaster la cea mai mare setare până devin aurii."
             ],
             "serviervorschlaege": "Garnisiți cu fructe de pădure proaspete, miere sau iaurt – sau savurați pur și simplu 😊.",
@@ -597,7 +644,7 @@
       },
       "contact": {
         "heading": "Contact",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nTelefon: +49 176 68291438",
         "button": {
           "href": "https://wa.me/4917668291438",
           "text": "Începeți chatul WhatsApp",
@@ -616,6 +663,25 @@
       "metaKeywords": "Olga’s Kitchen, Comandă mese congelate, Colțunași românești, Taluri cu brânză proaspătă, Mini-pancakes cu banane, Comandă online",
       "productsHeading": "✨ Specialitățile noastre",
       "skipLinkText": "Săriți la conținut"
+    },
+    "metaDescription": "Preparate congelate de casă din Herbertingen cu livrare în Sigmaringen și împrejurimi. Comandă Colțunași, talere cu brânză și mini-pancakes cu banane!",
+    "metaKeywords": "Olga’s Kitchen, mâncăruri congelate Sigmaringen, cumpără preparate gata, Colțunași românești, talere cu brânză, mini-pancakes, Herbertingen, livrare Sigmaringen",
+    "productsHeading": "✨ Specialitățile noastre din Sigmaringen",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Olga’s Kitchen",
+      "image": "https://olgas-kitchen.de/logo.png",
+      "url": "https://olgas-kitchen.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heßlingerstraße 2",
+        "addressLocality": "Herbertingen",
+        "postalCode": "88518",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49 176 68291438",
+      "areaServed": "Sigmaringen"
     }
   },
   "ru": {
@@ -644,7 +710,7 @@
     ],
     "sections": {
       "home": {
-        "heading": "Традиционная кухня для вашего повседневного рациона – просто закажите заранее и наслаждайтесь",
+        "heading": "Домашние замороженные блюда из Зигмарингена – закажите заранее и наслаждайтесь",
         "text": "Добро пожаловать в Olga’s Kitchen – здесь вас ждут аутентичные, вручную приготовленные замороженные блюда, созданные с любовью и заботой. Наслаждайтесь традиционной восточноевропейской домашней кухней: свежей, полезной и готовой за считанные минуты. Идеально для гурманов и занятых людей в районе Зигмаринген, которые хотят почувствовать уют и настоящий вкус дома.",
         "button": {
           "href": "#produkte",
@@ -686,7 +752,8 @@
           "details": {
             "packung": "12 лепешек (примерно 360 г замороженного продукта) – идеально для завтрака или перекуса.",
             "zubereitung": [
-              "Выпекать в разогретой духовке при 180 °C с конвекцией 25–30 минут (перевернуть на полпути), пока лепешки не станут золотисто-коричневыми."
+              "Готовьте продукт только в замороженном виде, не размораживайте перед приготовлением.",
+              "Выпекать в разогретой духовке при 190 °C с конвекцией 25–30 минут (перевернуть на полпути), пока лепешки не станут золотисто-коричневыми."
             ],
             "serviervorschlaege": "Наслаждайтесь с йогуртом, сметаной и свежими ягодами.",
             "naehrwerte": "156 ккал | 14 г белка | 22 г углеводов | 4 г жира"
@@ -718,6 +785,7 @@
           "details": {
             "packung": "2 порции (500 г замороженного продукта) – идеально в качестве основного блюда или для дележа.",
             "zubereitung": [
+              "Готовьте продукт только в замороженном виде, не размораживайте перед приготовлением.",
               "Довести воду до кипения и посолить.",
               "Варить пельмени 5–7 минут, пока они не всплывут.",
               "Слить воду и обжарить на небольшом количестве масла."
@@ -753,6 +821,7 @@
           "details": {
             "packung": "12 штук (примерно 240 г замороженного продукта) – удобно брать с собой и перекусывать.",
             "zubereitung": [
+              "Готовьте продукт только в замороженном виде, не размораживайте перед приготовлением.",
               "Поджарить замороженные блинчики (2–4 штуки) в тостере на максимальной мощности до золотистого цвета."
             ],
             "serviervorschlaege": "Сверху положите свежие ягоды, мед или йогурт – или просто наслаждайтесь в чистом виде 😊.",
@@ -796,7 +865,7 @@
       },
       "contact": {
         "heading": "Контакт",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen",
+        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nТелефон: +49 176 68291438",
         "button": {
           "href": "https://wa.me/4917668291438",
           "text": "Начать чат в WhatsApp",
@@ -815,6 +884,25 @@
       "metaKeywords": "Olga’s Kitchen, Заказать замороженные блюда, Румынские пельмени, Лепешки из творожного сыра, Мини-блинчики с бананом, Заказать онлайн",
       "productsHeading": "✨ Наши Специалитеты",
       "skipLinkText": "Перейти к содержанию"
+    },
+    "metaDescription": "Домашние замороженные блюда из Гербертингена с доставкой в Зигмаринген и окрестности. Закажите румынские пельмени, творожные лепешки и мини-блинчики с бананом онлайн!",
+    "metaKeywords": "Olga’s Kitchen, замороженные блюда Зигмаринген, купить готовую еду, румынские пельмени, творожные лепешки, мини-блинчики, Гербертинген, доставка Зигмаринген",
+    "productsHeading": "✨ Наши специальности из Зигмарингена",
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Olga’s Kitchen",
+      "image": "https://olgas-kitchen.de/logo.png",
+      "url": "https://olgas-kitchen.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heßlingerstraße 2",
+        "addressLocality": "Herbertingen",
+        "postalCode": "88518",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49 176 68291438",
+      "areaServed": "Sigmaringen"
     }
   }
 }
