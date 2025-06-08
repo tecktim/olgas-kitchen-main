@@ -202,12 +202,12 @@
       },
       "contact": {
         "heading": "Kontakt",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nTelefon: +49 176 68291438",
+        "text": "Olga’s Kitchen",
         "button": {
-          "href": "https://wa.me/4917668291438",
-          "text": "WhatsApp Chat starten",
-          "ariaLabel": "WhatsApp-Chat mit Olga’s Kitchen starten",
-          "external": true
+          "href": "#kontakt",
+          "text": "Kontakt aufnehmen",
+          "ariaLabel": "Kontakt mit Olga’s Kitchen aufnehmen",
+          "external": false
         }
       },
       "footer": {
@@ -233,12 +233,12 @@
       "url": "https://olgas-kitchen.de",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Heßlingerstraße 2",
-        "addressLocality": "Herbertingen",
-        "postalCode": "88518",
+        "streetAddress": "",
+        "addressLocality": "",
+        "postalCode": "",
         "addressCountry": "DE"
       },
-      "telephone": "+49 176 68291438",
+      "telephone": "",
       "areaServed": "Sigmaringen"
     }
   },
@@ -423,12 +423,12 @@
       },
       "contact": {
         "heading": "Contact",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nPhone: +49 176 68291438",
+        "text": "Olga’s Kitchen",
         "button": {
-          "href": "https://wa.me/4917668291438",
-          "text": "Start WhatsApp chat",
-          "ariaLabel": "Start WhatsApp chat with Olga’s Kitchen",
-          "external": true
+          "href": "#contact",
+          "text": "Contact us",
+          "ariaLabel": "Contact Olga’s Kitchen",
+          "external": false
         }
       },
       "footer": {
@@ -454,12 +454,12 @@
       "url": "https://olgas-kitchen.de",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Heßlingerstraße 2",
-        "addressLocality": "Herbertingen",
-        "postalCode": "88518",
+        "streetAddress": "",
+        "addressLocality": "",
+        "postalCode": "",
         "addressCountry": "DE"
       },
-      "telephone": "+49 176 68291438",
+      "telephone": "",
       "areaServed": "Sigmaringen"
     }
   },
@@ -644,12 +644,12 @@
       },
       "contact": {
         "heading": "Contact",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nTelefon: +49 176 68291438",
+        "text": "Olga’s Kitchen",
         "button": {
-          "href": "https://wa.me/4917668291438",
-          "text": "Începeți chatul WhatsApp",
-          "ariaLabel": "Începeți chatul WhatsApp cu Olga’s Kitchen",
-          "external": true
+          "href": "#contact",
+          "text": "Contactează-ne",
+          "ariaLabel": "Contactează Olga’s Kitchen",
+          "external": false
         }
       },
       "footer": {
@@ -675,12 +675,12 @@
       "url": "https://olgas-kitchen.de",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Heßlingerstraße 2",
-        "addressLocality": "Herbertingen",
-        "postalCode": "88518",
+        "streetAddress": "",
+        "addressLocality": "",
+        "postalCode": "",
         "addressCountry": "DE"
       },
-      "telephone": "+49 176 68291438",
+      "telephone": "",
       "areaServed": "Sigmaringen"
     }
   },
@@ -865,12 +865,12 @@
       },
       "contact": {
         "heading": "Контакт",
-        "text": "Olga’s Kitchen\nHeßlingerstraße 2, 88518 Herbertingen\nТелефон: +49 176 68291438",
+        "text": "Olga’s Kitchen",
         "button": {
-          "href": "https://wa.me/4917668291438",
+          "href": "#contact",
           "text": "Начать чат в WhatsApp",
           "ariaLabel": "Начать чат в WhatsApp с Olga’s Kitchen",
-          "external": true
+          "external": false
         }
       },
       "footer": {
@@ -896,12 +896,12 @@
       "url": "https://olgas-kitchen.de",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Heßlingerstraße 2",
-        "addressLocality": "Herbertingen",
-        "postalCode": "88518",
+        "streetAddress": "",
+        "addressLocality": "",
+        "postalCode": "",
         "addressCountry": "DE"
       },
-      "telephone": "+49 176 68291438",
+      "telephone": "",
       "areaServed": "Sigmaringen"
     }
   }
