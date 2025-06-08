@@ -7,7 +7,7 @@
     "build": "cross-env VITE_APP_VERSION=$npm_package_version vite build",
     "preview": "npm run build && vite preview",
     "deploy": "gh-pages -d dist",
-    "serve": "npm run build && npm run deploy"
+    "serve": "npm version minor && npm run build && npm run deploy"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
