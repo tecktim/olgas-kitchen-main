@@ -97,8 +97,50 @@
           }
         },
         {
+          "id": "frischkaese-schoko",
+          "name": "Frischkäse-Taler mit Schokodrops (Brânzoaice)",
+          "images": [
+            {
+              "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung1.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung2.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
+              "overlayText": "Zubereitung"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Verführerisch duftende, goldbraun gebackene Taler aus luftigem Frischkäse-Teig mit Schokodrops – perfekt für ein genussvolles Frühstück oder einen Snack zwischendurch.",
+          "allergens": [
+            "Milch",
+            "Gluten",
+            "Ei",
+            "Schokolade"
+          ],
+          "details": {
+            "packung": "12 Taler (ca. 360 g gefrorenes Produkt) – perfekt für Frühstück oder Snack.",
+            "zubereitung": [
+              "Das Produkt immer gefroren zubereiten, nicht vorher auftauen.",
+              "Im vorgeheizten Ofen bei 190 °C Umluft 25–30 Minuten backen (zwischendurch wenden), bis die Taler goldbraun sind."
+            ],
+            "serviervorschlaege": "Mit Joghurt, Schmand und frischen Beeren genießen.",
+            "naehrwerte": "156 kcal | 14 g Eiweiß | 22 g KH | 4 g Fett"
+          }
+        },
+        {
           "id": "piroggen",
-          "name": "Piroggen (Colțunași)",
+          "name": "Piroggen gefüllt mit Hüttenkäse (Colțunași)",
           "images": [
             {
               "src": "products/Piroggen/Serviervorschlag.jpg",
@@ -114,6 +156,41 @@
             }
           ],
           "description": "Rumänische Teigtaschen (ähnlich den russischen Pelmeni) mit cremiger Hüttenkäse-Füllung – weich, herzhaft und von Hand gemacht für echten Hausmannskost-Genuss.",
+          "allergens": [
+            "Gluten",
+            "Milch",
+            "Ei"
+          ],
+          "details": {
+            "packung": "2 Portionen (500 g gefrorenes Produkt) – ideal als Hauptgericht oder zum Teilen.",
+            "zubereitung": [
+              "Das Produkt immer gefroren zubereiten, nicht vorher auftauen.",
+              "Wasser zum Kochen bringen und salzen.",
+              "Piroggen 5–7 Minuten garen, bis sie oben schwimmen.",
+              "Abgießen und mit etwas Butter schwenken."
+            ],
+            "serviervorschlaege": "Mit Schmand und frischen Kräutern servieren.",
+            "naehrwerte": "225 kcal | 10,8 g Eiweiß | 24,5 g KH | 9,4 g Fett"
+          }
+        },
+        {
+          "id": "piroggen-kartoffel",
+          "name": "Piroggen gefüllt mit Kartoffel (Colțunași)",
+          "images": [
+            {
+              "src": "products/Piroggen/Serviervorschlag.jpg",
+              "overlayText": "Serviervorschlag"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Herstellung"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Zubereitung"
+            }
+          ],
+          "description": "Rumänische Teigtaschen (ähnlich den russischen Pelmeni) mit herzhafter Kartoffel-Füllung – weich, sättigend und von Hand gemacht für echten Hausmannskost-Genuss.",
           "allergens": [
             "Gluten",
             "Milch",
@@ -318,8 +395,50 @@
           }
         },
         {
+          "id": "frischkaese-schoko",
+          "name": "Frischkäse-Taler with Chocolate Drops (Brânzoaice)",
+          "images": [
+            {
+              "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
+              "overlayText": "Serving suggestion"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung1.jpg",
+              "overlayText": "Production"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung2.jpg",
+              "overlayText": "Production"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
+              "overlayText": "Preparation"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
+              "overlayText": "Preparation"
+            }
+          ],
+          "description": "Irresistibly fragrant, golden-brown baked patties made from airy fresh cheese dough with chocolate drops – perfect for a delightful breakfast or a snack in between.",
+          "allergens": [
+            "Milk",
+            "Gluten",
+            "Egg",
+            "Chocolate"
+          ],
+          "details": {
+            "packung": "12 patties (approx. 360 g frozen product) – perfect for breakfast or a snack.",
+            "zubereitung": [
+              "Always cook from frozen, do not thaw before preparation.",
+              "Bake in a preheated oven at 190 °C circulating air for 25–30 minutes (turning halfway), until the patties are golden brown."
+            ],
+            "serviervorschlaege": "Enjoy with yogurt, sour cream, and fresh berries.",
+            "naehrwerte": "156 kcal | 14 g protein | 22 g carbs | 4 g fat"
+          }
+        },
+        {
           "id": "piroggen",
-          "name": "Piroggen (Colțunași)",
+          "name": "Piroggen with Cottage Cheese Filling (Colțunași)",
           "images": [
             {
               "src": "products/Piroggen/Serviervorschlag.jpg",
@@ -335,6 +454,41 @@
             }
           ],
           "description": "Romanian dumplings (similar to Russian Pelmeni) with creamy cottage cheese filling – soft, hearty, and handmade for authentic home-cooked flavor.",
+          "allergens": [
+            "Gluten",
+            "Milk",
+            "Egg"
+          ],
+          "details": {
+            "packung": "2 servings (500 g frozen product) – ideal as a main dish or for sharing.",
+            "zubereitung": [
+              "Always cook from frozen, do not thaw before preparation.",
+              "Bring water to a boil and add salt.",
+              "Cook dumplings for 5–7 minutes until they float to the top.",
+              "Drain and toss with a little butter."
+            ],
+            "serviervorschlaege": "Serve with sour cream and fresh herbs.",
+            "naehrwerte": "225 kcal | 10.8 g protein | 24.5 g carbs | 9.4 g fat"
+          }
+        },
+        {
+          "id": "piroggen-kartoffel",
+          "name": "Piroggen with Potato Filling (Colțunași)",
+          "images": [
+            {
+              "src": "products/Piroggen/Serviervorschlag.jpg",
+              "overlayText": "Serving suggestion"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Production"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Preparation"
+            }
+          ],
+          "description": "Romanian dumplings (similar to Russian Pelmeni) with savory potato filling – soft, satisfying, and handmade for authentic home-cooked flavor.",
           "allergens": [
             "Gluten",
             "Milk",
@@ -539,8 +693,50 @@
           }
         },
         {
+          "id": "frischkaese-schoko",
+          "name": "Frischkäse-Taler cu picături de ciocolată (Brânzoaice)",
+          "images": [
+            {
+              "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
+              "overlayText": "Sugestie de servire"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung1.jpg",
+              "overlayText": "Producție"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung2.jpg",
+              "overlayText": "Producție"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
+              "overlayText": "Pregătire"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
+              "overlayText": "Pregătire"
+            }
+          ],
+          "description": "Taluri aurii, umplute cu brânză proaspătă și picături de ciocolată, coapte până devin pufoase – perfecte pentru un mic dejun delicios sau o gustare între mese.",
+          "allergens": [
+            "Lactate",
+            "Gluten",
+            "Ou",
+            "Ciocolată"
+          ],
+          "details": {
+            "packung": "12 taluri (aprox. 360 g produs congelat) – perfecte pentru mic dejun sau gustare.",
+            "zubereitung": [
+              "Preparați întotdeauna produsul congelat, fără a-l decongela înainte.",
+              "Coaceți în cuptorul preîncălzit la 190 °C, ventilat, timp de 25–30 de minute (întorcându-le la jumătatea timpului), până când talurile devin aurii."
+            ],
+            "serviervorschlaege": "Savurați cu iaurt, smântână și fructe de pădure proaspete.",
+            "naehrwerte": "156 kcal | 14 g proteine | 22 g carbohidrați | 4 g grăsimi"
+          }
+        },
+        {
           "id": "piroggen",
-          "name": "Piroggen (Colțunași)",
+          "name": "Piroggen cu umplutură de brânză de vaci (Colțunași)",
           "images": [
             {
               "src": "products/Piroggen/Serviervorschlag.jpg",
@@ -556,6 +752,41 @@
             }
           ],
           "description": "Colțunași românești (similar cu pelmeni rusești) umpluți cu brânză de vaci cremoasă – moi, sățioși și făcuți manual pentru un gust autentic de mâncare de casă.",
+          "allergens": [
+            "Gluten",
+            "Lactate",
+            "Ou"
+          ],
+          "details": {
+            "packung": "2 porții (500 g produs congelat) – ideale ca fel principal sau pentru împărțit.",
+            "zubereitung": [
+              "Preparați întotdeauna produsul congelat, fără a-l decongela înainte.",
+              "Puneți apă la fiert și adăugați sare.",
+              "Gătiți colțunașii timp de 5–7 minute, până când floats la suprafață.",
+              "Scurgeți și amestecați cu puțin unt."
+            ],
+            "serviervorschlaege": "Serviți cu smântână și ierburi proaspete.",
+            "naehrwerte": "225 kcal | 10,8 g proteine | 24,5 g carbohidrați | 9,4 g grăsimi"
+          }
+        },
+        {
+          "id": "piroggen-kartoffel",
+          "name": "Piroggen cu umplutură de cartofi (Colțunași)",
+          "images": [
+            {
+              "src": "products/Piroggen/Serviervorschlag.jpg",
+              "overlayText": "Sugestie de servire"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Producție"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Pregătire"
+            }
+          ],
+          "description": "Colțunași românești (similar cu pelmeni rusești) umpluți cu cartofi savuroși – moi, sățioși și făcuți manual pentru un gust autentic de mâncare de casă.",
           "allergens": [
             "Gluten",
             "Lactate",
@@ -760,8 +991,50 @@
           }
         },
         {
+          "id": "frischkaese-schoko",
+          "name": "Frischkäse-Taler с шоколадными каплями (Brânzoaice)",
+          "images": [
+            {
+              "src": "products/FrischkaeseTaler/Serviervorschlag1.jpg",
+              "overlayText": "Рекомендация по подаче"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung1.jpg",
+              "overlayText": "Производство"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Herstellung2.jpg",
+              "overlayText": "Производство"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung1.jpg",
+              "overlayText": "Подготовка"
+            },
+            {
+              "src": "products/FrischkaeseTaler/Zubereitung2.jpg",
+              "overlayText": "Подготовка"
+            }
+          ],
+          "description": "Неотразимо ароматные, золотисто-коричневые лепешки из воздушного теста с творожным сыром и шоколадными каплями – идеально подходят для вкусного завтрака или перекуса.",
+          "allergens": [
+            "Молоко",
+            "Глютен",
+            "Яйцо",
+            "Шоколад"
+          ],
+          "details": {
+            "packung": "12 лепешек (примерно 360 г замороженного продукта) – идеально для завтрака или перекуса.",
+            "zubereitung": [
+              "Готовьте продукт только в замороженном виде, не размораживайте перед приготовлением.",
+              "Выпекать в разогретой духовке при 190 °C с конвекцией 25–30 минут (перевернуть на полпути), пока лепешки не станут золотисто-коричневыми."
+            ],
+            "serviervorschlaege": "Наслаждайтесь с йогуртом, сметаной и свежими ягодами.",
+            "naehrwerte": "156 ккал | 14 г белка | 22 г углеводов | 4 г жира"
+          }
+        },
+        {
           "id": "piroggen",
-          "name": "Piroggen (Colțunași)",
+          "name": "Piroggen с творожным сыром (Colțunași)",
           "images": [
             {
               "src": "products/Piroggen/Serviervorschlag.jpg",
@@ -777,6 +1050,41 @@
             }
           ],
           "description": "Румынские пельмени (аналогичные русским пельменям) с кремовой начинкой из творога – мягкие, сытные и сделанные вручную для настоящего домашнего вкуса.",
+          "allergens": [
+            "Глютен",
+            "Молоко",
+            "Яйцо"
+          ],
+          "details": {
+            "packung": "2 порции (500 г замороженного продукта) – идеально в качестве основного блюда или для дележа.",
+            "zubereitung": [
+              "Готовьте продукт только в замороженном виде, не размораживайте перед приготовлением.",
+              "Довести воду до кипения и посолить.",
+              "Варить пельмени 5–7 минут, пока они не всплывут.",
+              "Слить воду и обжарить на небольшом количестве масла."
+            ],
+            "serviervorschlaege": "Подавайте со сметаной и свежей зеленью.",
+            "naehrwerte": "225 ккал | 10,8 г белка | 24,5 г углеводов | 9,4 г жира"
+          }
+        },
+        {
+          "id": "piroggen-kartoffel",
+          "name": "Piroggen с картофельной начинкой (Colțunași)",
+          "images": [
+            {
+              "src": "products/Piroggen/Serviervorschlag.jpg",
+              "overlayText": "Рекомендация по подаче"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Производство"
+            },
+            {
+              "src": "products/ComingSoon.jpg",
+              "overlayText": "Подготовка"
+            }
+          ],
+          "description": "Румынские пельмени (аналогичные русским пельменям) с картофельной начинкой – мягкие, сытные и сделанные вручную для настоящего домашнего вкуса.",
           "allergens": [
             "Глютен",
             "Молоко",
